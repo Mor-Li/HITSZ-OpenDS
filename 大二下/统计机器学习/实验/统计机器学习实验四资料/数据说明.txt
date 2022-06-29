@@ -1,0 +1,13 @@
+﻿RowNumber：行号 ×
+CustomerID：用户编号 ×
+Surname：用户姓名 ×
+CreditScore：信用分数
+Geography：用户所在国家/地区 ×
+Gender：用户性别
+Age：年龄
+Tenure：当了本银行多少年用户
+NumOfProducts：使用产品数量
+HasCrCard：是否有本行信用卡
+IsActiveMember：是否活跃用户
+EstimatedSalary：估计收入
+Exited：是否已流失，这将作为我们的目标值
