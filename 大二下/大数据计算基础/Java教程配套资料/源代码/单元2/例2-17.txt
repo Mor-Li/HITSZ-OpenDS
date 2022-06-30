@@ -1,0 +1,9 @@
+public class Example214{
+	public static void main(String[] args) {
+			int sum=0;     //定义一个变量sum，赋初值0，用来保存每次循环后sum的值
+			for(int i=1;i<=100;i++){        //循环条件
+				sum=sum+i;                  //循环体
+			}
+			System.out.println("1到100的和为："+sum);
+	}
+}

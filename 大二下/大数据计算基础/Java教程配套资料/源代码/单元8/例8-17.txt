@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.Date;
+public class Example817 {
+	public static void main(String[] args) throws IOException {
+		File f=new File("test17.txt");
+		createFile(f);
+		getFileInformation(f);
+	}
+	public static void createFile(File f) throws IOException{
+		//创建文件
+		System.out.println("创建文件："+f.createNewFile());
+	}
+	public static void getFileInformation(File f) {
+		//获取文件的相关信息
+		System.out.println("文件名字是："+f.getName());
+		System.out.println("文件的相对路径是："+f.getPath());
+		System.out.println("文件的上级路径是："+f.getParent());
+		System.out.println("文件的绝对路径是："+f.getAbsolutePath());
+		System.out.println("文件的长度是："+f.length()+"B");
+		System.out.println("文件最后修改时间是："+new Date(f.lastModified()));
+	}
+}

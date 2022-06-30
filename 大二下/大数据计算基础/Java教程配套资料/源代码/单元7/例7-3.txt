@@ -1,0 +1,13 @@
+public class Example703 extends Thread{  //① 创建一个Thread类的派生类
+	public void run() {  //② 覆盖Thread类的run()方法
+	Thread t=Thread.currentThread();
+	for(int i=0;i<=10;i++)
+		System.out.println("正在运行的线程是："+t.getName()+" 运行次数："+i);
+	}
+	public static void main(String[] args) {
+		Example703 t=new Example703();   //③ 创建对象
+		t.start();               //④ 调用start()方法
+		for(int i=0;i<=10;i++)
+			System.out.println("正在运行的线程是："+Thread.currentThread().getName()+" 运行次数："+i);
+	}
+}

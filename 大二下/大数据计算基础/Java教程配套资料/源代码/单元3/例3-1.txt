@@ -1,0 +1,35 @@
+class Phone {
+	public  String brand;  //定义品牌
+    public  String color;   //定义颜色
+    public  int  price;    //定义价格
+    public  Phone() {    //定义无参构造方法
+    }
+    public  Phone(String b,String c,int p) {    //定义有参构造方法
+        brand=b;
+        color=c;
+        price=p;
+    }
+    public  void  phoneCall() {    //定义成员方法打电话
+        System.out.println("正在使用手机打电话的功能");
+    }
+    public  void  sendMessage() {     //定义成员方法发信息
+        System.out.println("正在使用手机发信息的功能");
+    }
+}
+ public class Example301{
+	 public static void main(String[] args) {
+		 Phone  p1=new Phone();//用无参构造函数实例化对象p1
+		 Phone p2=new Phone("华为","香槟金",1500);//用有参构造函数实例化对象p2
+		 p1.brand="三星";
+		 p1.color="灰色";
+		 p1.price=2000;
+		 System.out.println("第一款手机的信息如下：");
+		 System.out.println("品牌是："+p1.brand+" 颜色是："+p1.color+" 价格是"+p1.price);
+		 p1.phoneCall();   //引用对象p1的成员方法phoneCall()
+		 p1.sendMessage();  //引用对象p1的成员方法sendMessage()
+		 System.out.println("第二款手机的信息如下：");
+		 System.out.println("品牌是："+p2.brand+" 颜色是："+p2.color+" 价格是"+p2.price);
+		 p2.phoneCall();   //引用对象p1的成员方法phoneCall()
+		 p2.sendMessage();  //引用对象p1的成员方法sendMessage()
+	 }
+ }

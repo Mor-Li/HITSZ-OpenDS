@@ -1,0 +1,9 @@
+public class Example506 {
+	public static void main(String[] args){
+		String s=new String("abcdeFGHI");
+		String new1=s.toLowerCase();//转换为小写
+		String new2=s.toUpperCase();//转换为大写
+		System.out.println("全部转换成小写字母后的字符串是："+new1);
+		System.out.println("全部转换成大写字母后的字符串是："+new2);
+	}
+}

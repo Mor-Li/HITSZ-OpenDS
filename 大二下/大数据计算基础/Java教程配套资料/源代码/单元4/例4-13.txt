@@ -1,0 +1,24 @@
+class Animal{
+	public void greet() { 
+		System.out.println("欢迎");
+	}
+}
+class Cat extends Animal{  //继承Animal类
+	public void greet() { 
+		System.out.println("小猫喵喵喵......");
+	}	
+}
+class Dog extends Animal{  //继承Animal类
+	public void greet() { 
+		System.out.println("小狗汪汪汪......");
+	}	
+}
+public class Example413 {
+	public static void greetTask(Animal a) {
+		a.greet();
+	}
+	public static void main(String[] args) {
+		greetTask(new Cat());
+		greetTask(new Dog()); 
+	}
+}

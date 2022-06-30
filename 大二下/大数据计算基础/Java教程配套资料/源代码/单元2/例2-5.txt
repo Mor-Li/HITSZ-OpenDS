@@ -1,0 +1,13 @@
+public class Example203 {          
+	public static void main(String[] args){   
+		int i=7;
+		int j=2;
+		double x=7.0;
+		System.out.println("7/2="+i/j);
+		System.out.println("7.0/2="+x/j);
+		System.out.println("7%2="+i%j);
+		System.out.println("7.0%2="+x%j);
+		j=++i;
+		System.out.println("i="+i+",j="+j);
+	}
+}

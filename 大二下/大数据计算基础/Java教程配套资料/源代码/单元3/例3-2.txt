@@ -1,0 +1,29 @@
+class Circle{
+	public  final  float PI=3.1415926f;  //用final修饰PI为常量
+    public  float  r=0.0f;               //定义成员变量r
+    public  static int  count;          //定义静态成员变量count
+    public static float getCircleCount() { //定义静态成员方法
+        return  count;
+    }
+    public float getArea(){    //定义实例成员方法，求面积
+        return  PI * r * r;
+    }
+    public float getCircumference(){ //定义实例成员方法，求周长
+        return  2 * PI * r ;
+    }
+}
+public class Example302 {  //定义主类测试Circle的用法
+	public static void main(String[] args) {
+	Circle c1=new Circle(); //用系统提供的无参构造函数来实例化对象c1
+	Circle.count++;       //通过类名.静态成员变量名的方法对count赋值
+	Circle c2=new Circle(); //用系统提供的无参构造函数来实例化对象c2
+	Circle.count++;       //静态成员变量count用来计算Circle类对象的个数
+	c1.r=3.0f;         //通过对象名.成员变量名的方法对成员变量r赋值
+	c2.r=6.0f;         //为对象c2的成员变量r赋值
+	System.out.println("Cirle类对象的个数为："+Circle.getCircleCount());
+	System.out.println("第一个对象的面积和周长：");
+	System.out.println("面积："+c1.getArea()+" 周长："+c1.getCircumference());
+	System.out.println("第二个对象的面积和周长：");
+	System.out.println("面积："+c2.getArea()+" 周长："+c2.getCircumference());
+	}
+}

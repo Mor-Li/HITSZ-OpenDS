@@ -1,0 +1,12 @@
+public class Example205 {          
+	public static void main(String[] args){   
+		int a=0,b=0,c=0;		//定义整型变量a、b、c并赋初值为0
+		boolean x,y;     	 	//定义布尔类型变量x，y
+		x=a>0 & b++>1;  	 	//逻辑与运算
+		System.out.println(x);
+		System.out.println("b="+b);
+		y=a>0 && c++>1;			//短路与
+		System.out.println(y);
+		System.out.println("c="+c);
+		}
+}

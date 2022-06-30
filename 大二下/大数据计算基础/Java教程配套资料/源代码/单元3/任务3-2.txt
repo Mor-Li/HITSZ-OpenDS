@@ -1,0 +1,75 @@
+//在“Task302”下创建包“car.java”，并在包“car.java”下创建类“Bus.java”。
+//Bus.java文件中的内容
+package car.java;
+public class Bus {
+	int enginenumber;
+	String color;
+	int passengers;
+	public Bus(int engineNumber,String color,int passengers) {
+		this.enginenumber=engineNumber;
+		this.color=color;
+		this.passengers=passengers;
+	}
+	public void display() {
+		System.out.println("巴士引擎数:"+enginenumber+" 外观颜色:"+color+" 最大载客数"+passengers+"个人");
+	}
+	public void brake() {
+		System.out.println("巴士刹车");
+	}
+	public void accelerated() {
+		System.out.println("巴士加速");
+	}
+	public void reportedStop() {
+		System.out.println("巴士报站");
+	}
+}
+
+
+//在包“car.java”下创建类“Truck.java”。
+//Truck.java文件中的内容
+package car.java;
+public class Truck {
+	int enginenumber;
+	String color;
+	int load;
+	public Truck(int engineNumber,String color,int load) {
+		this.enginenumber=engineNumber;
+		this.color=color;
+		this.load=load;
+	}
+	public void display() {
+		System.out.println("卡车引擎数:"+enginenumber+" 外观颜色:"+color+" 最大载重量"+load+"顿");
+	}
+	public void brake() {
+		System.out.println("卡车刹车");
+	}
+	public void accelerated() {
+		System.out.println("卡车加速");
+	}
+	public void unloading() {
+		System.out.println("卡车卸货");
+	}
+}
+
+//在“Task302”下创建包“test.java”，并在包“test.java”下创建类“Task302.java”，在类“Task302”的main()方法里，创//建包“car.java”下的类Bus和类Truck的对象，并调用类Bus和类Truck的方法。
+
+package test.java;
+import car.java.*;
+public class Task302 {
+	public static void main(String[] args) {
+     Bus bs=new Bus(8,"蓝色",38);
+     Truck tk=new Truck(10,"黑色",50);
+     bs.display();
+     bs.brake();
+     bs.accelerated();
+     bs.reportedStop();
+     tk.display();
+     tk.brake();
+     tk.accelerated();
+     tk.unloading();
+	}
+}
+
+
+
+

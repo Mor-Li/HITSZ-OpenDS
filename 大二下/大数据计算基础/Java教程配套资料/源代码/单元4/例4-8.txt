@@ -1,0 +1,20 @@
+//接口Student、类Pupil、Middle和Undergraduate的定义同例4-7，此处省略
+public class Example408 {
+	public static void studyTask(Student s) {
+		s.study();
+	}
+	public static void eatTask(Student s) {
+		s.eat();
+	}
+	public static void main(String[] args) {
+		Pupil p=new Pupil();
+		Middle m=new Middle();
+		Undergraduate u=new Undergraduate();
+		studyTask(p);
+		studyTask(m);
+		studyTask(u);
+		eatTask(p);
+		eatTask(m);
+		eatTask(u);
+	}
+}

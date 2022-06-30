@@ -1,0 +1,13 @@
+public class Example204 {          
+	public static void main(String[] args){   
+		int a,b,c,d,e,f;
+		a=b=c=d=5;
+		a++;
+		++b;
+		c--;
+		--d;
+		System.out.println("a="+a+",b="+b+",c="+c+",d="+d);
+		e=a++;f=++b;
+		System.out.println("a="+a+",b="+b+",e="+e+",f="+f);
+	}
+}

@@ -1,0 +1,20 @@
+public class Example505 {
+	public static void main(String[] args){
+		 String s1=new String("Hello Java!");//声明字符串s1
+		 String s2=new String("Hello Java!");//声明字符串s2
+		 String s3=new String("HELLO JAVA!");//声明字符串s3
+		 String s4=s1;//将s1的值赋给s4
+		 boolean b1=(s1==s2);//用“==”比较s1和s2
+		 boolean b2=(s1==s4);//用“==”比较s1和s4
+		 boolean b3=s1.equals(s2);//用“equals()”比较s1和s2
+		 boolean b4=s1.equals(s3);//用“equals()”比较s1和s3
+		 boolean b5=s1.equalsIgnoreCase(s2);//用“equalsIgnoreCase()”比较s1和s2
+		 boolean b6=s1.equalsIgnoreCase(s3);//用“equalsIgnoreCase()”比较s1和s3
+		 System.out.println("s1==s2:"+b1);
+		 System.out.println("s1==s4:"+b2);
+		 System.out.println("s1 equals s2:"+b3);
+		 System.out.println("s1 equals s3:"+b4);
+		 System.out.println("s1 equalsIgnoreCase s2:"+b5);
+		 System.out.println("s1 equalsIgnoreCase s3:"+b6);
+			}
+}

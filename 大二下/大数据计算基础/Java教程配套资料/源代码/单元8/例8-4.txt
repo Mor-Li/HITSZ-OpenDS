@@ -1,0 +1,13 @@
+import java.io.*;
+public class Example804 {
+	public static void main(String[] args) throws Exception {
+		FileInputStream fis=new FileInputStream("test4.txt");
+		BufferedInputStream bis=new BufferedInputStream(fis);
+		byte[] b=new byte[30];
+		int len; 
+		while((len=bis.read(b))!=-1) {
+			System.out.println(new String(b));
+		} 
+		bis.close();
+       }
+}

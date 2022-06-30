@@ -1,0 +1,10 @@
+import java.io.*;
+public class Example809 {
+	public static void main(String[] args) throws IOException{
+		FileReader fr= new FileReader("test9.txt");
+		int len= ' ';
+		while((len=fr.read())!=-1)
+			System.out.print((char)len);
+		fr.close();
+	}
+}

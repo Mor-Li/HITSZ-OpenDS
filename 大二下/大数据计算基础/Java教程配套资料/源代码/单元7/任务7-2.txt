@@ -1,0 +1,41 @@
+class SpeechThread extends Thread { 
+	 public void run() {
+		 try {
+			 int i=15;
+			 System.out.println("演讲时间15分钟，开始计时...");
+			 while(i>0) {
+				 System.out.println("剩余"+i+"分钟");
+				 sleep(1000);
+				 i--; 
+			 }  
+		 }catch(InterruptedException e) {
+			 e.printStackTrace();
+		 }
+		 System.out.println("时间到，请评委亮分");
+	 } 
+}
+class JudgesThread extends Thread {
+	SpeechThread st;
+	public JudgesThread(SpeechThread st) {
+		this.st=st;
+	}
+	public void run() {	
+		try {
+			st.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		for(int i=1;i<=3;i++)
+		{   
+			System.out.println("第"+i+"个评委给演讲者打分");
+		}
+	}
+}
+public class Task702 {
+	public static void main(String[] args) {
+		SpeechThread st=new SpeechThread();
+		JudgesThread jt=new JudgesThread(st);
+		st.start(); 
+		jt.start();
+	}
+}

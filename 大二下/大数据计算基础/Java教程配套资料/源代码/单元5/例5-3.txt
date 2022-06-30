@@ -1,0 +1,10 @@
+public class Example503 {
+	public static void main(String[] args){
+		String s="Hello Java!";   //创建了一个字符串
+		System.out.println("字符串s的长度为："+s.length());//调用length()方法输出字符串长度
+		System.out.println("字符a在字符串s中第一次出现的位置是："+s.indexOf("a"));
+		System.out.println("字符a在字符串s中最后一次出现的位置是："+s.lastIndexOf("a"));
+		System.out.println("字符串s中索引位置为7的字符是："+s.charAt(7));//将字符串s中索引位置为7的字符返回
+	}
+
+}

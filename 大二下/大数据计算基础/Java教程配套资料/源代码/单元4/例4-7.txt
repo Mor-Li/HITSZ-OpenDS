@@ -1,0 +1,43 @@
+//定义接口Student，接口名与文件名相同
+public interface Student {
+	void study();
+	void eat();
+}
+//定义Pupil、Middle和Undergraduate实现接口Student，主类Example407测试接口
+class Pupil implements Student{
+	public void study() {
+		System.out.println("小学生学习小学课程");
+	}
+	public void eat() {
+		System.out.println("小学生在小学食堂吃饭");
+	}
+}
+class Middle implements Student{
+	public void study() {
+		System.out.println("中学生学习中学课程");
+	}
+	public void eat() {
+		System.out.println("中学生在中学食堂吃饭");
+	}
+}
+class Undergraduate implements Student{
+	public void study() {
+		System.out.println("大学生学习专业课程");
+	}
+	public void eat() {
+		System.out.println("大学生在大学食堂吃饭");
+	}
+}
+public class Example407 {
+	public static void main(String[] args) {
+		Pupil p=new Pupil();
+		Middle m=new Middle();
+		Undergraduate u=new Undergraduate();
+		p.study();
+		p.eat();
+		m.study();
+		m.eat();
+		u.study();
+		u.eat();
+	}
+}

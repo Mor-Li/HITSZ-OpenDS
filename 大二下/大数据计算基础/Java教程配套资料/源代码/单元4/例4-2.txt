@@ -1,0 +1,26 @@
+//AnimaL类的定义，同例4-1，此处省略
+class Cat extends Animal{  //继承Animal类
+	String color;
+	String name;
+	public void eat() {
+		System.out.println("猫吃老鼠");
+	}
+	public void greet() {
+		System.out.println("喵喵喵...");
+	}
+}
+public class Example402 {
+	public static void main(String[] args) {
+		Cat c=new Cat();
+		c.name="小淘气";
+		c.color="灰色";
+		c.legnumber=4;
+		c.height=30;
+		c.weight=3;
+		c.display();
+		System.out.println("猫是"+c.color+"的,名字叫"+c.name);
+		c.eat();
+		c.sleep();
+		c.greet();
+	}
+}

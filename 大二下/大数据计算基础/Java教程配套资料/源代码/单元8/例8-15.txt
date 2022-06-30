@@ -1,0 +1,9 @@
+import java.io.*;
+public class Example815 {
+	public static void main(String[] args) throws IOException{
+		FileWriter fw= new FileWriter("test15.txt");
+	      String str="你好，欢迎使用文件输出流，写入字符串的一部分";
+		fw.write(str,0,10);
+		fw.close();
+	 }
+}	

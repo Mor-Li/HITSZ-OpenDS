@@ -1,0 +1,35 @@
+class Animal{
+	 String name;
+	 public Animal(String name) {
+		 this.name=name;
+	 }
+	public  void greet() {
+		System.out.println(name+"欢迎你");
+	}
+	public  void eat() {
+		System.out.println(name+"吃饭了");
+	}
+}
+class Cat extends Animal{
+	int age;
+	public Cat(String name,int age) {
+		super(name);
+		this.age=age;
+	}
+	public  void greet() {
+		System.out.println(name+age+"岁了,喵喵喵，欢迎你");
+	}
+	public void climbTree() {
+		System.out.println(name+"会爬树");
+	}
+}
+public class Example412 {
+	public static void main(String[] args) {
+		Animal a=new Cat("小呆呆",3);
+		a.eat();  //子类没有重写eat()方法，调用父类的eat()方法
+		a.greet(); //子类重写greet()方法，调用子类的greet()方法
+		//a.climbTree();报错 类Animal没有定义此方法
+		System.out.println("名字是"+a.name);
+		//System.out.println(a.age); 报错
+	}
+}

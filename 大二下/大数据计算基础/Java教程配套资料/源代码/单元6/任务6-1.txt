@@ -1,0 +1,21 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+public class Task601 {
+	public static void main(String[] args) {
+		int[] arr=new int[5];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("请输入5个整数:");
+		try {
+			for(int i=0;i<5;i++) {
+			arr[i]=sc.nextInt() ;
+			}
+			for(int i=0;i<=5;i++) {
+			   System.out.println("	arr["+i+"]="+arr[i]);
+			}
+		}catch(InputMismatchException e)	{
+				System.out.println("输入不合法");
+			}catch(ArrayIndexOutOfBoundsException e)	{
+				System.out.println("数组下标越界");
+			}
+		}
+	}

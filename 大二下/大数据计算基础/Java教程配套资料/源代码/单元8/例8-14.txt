@@ -1,0 +1,11 @@
+import java.io.*;
+public class Example814 {
+	public static void main(String[] args) throws Exception {
+		FileWriter fw=new FileWriter("test14.txt",true);
+		String str="本例题主要向文件test14.txt写入字符串数据，写入方式为追加写入";	 
+     	fw.write(str);
+	    str="再次写入信息，查看能否实现追加写入";
+	    fw.write(str);
+		fw.close();
+       }
+}

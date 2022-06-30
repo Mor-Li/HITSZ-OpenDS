@@ -1,0 +1,44 @@
+class Animal{
+	String color;  //动物的颜色
+	int legnumber;       //动物腿的个数
+	double height;  //动物的身长
+	double weight;  //动物的种量
+	public void eat() {
+		System.out.println("具有吃饭的功能");
+	}
+	public void sleep() {
+		System.out.println("具有睡觉的功能");
+	}
+	public void display() {
+		System.out.println("这个动物共有"+legnumber+"条腿,是"+color+"的");
+		System.out.println("身长"+height+"厘米,重"+weight+"公斤");
+	}
+}
+class Cat extends Animal{  //继承Animal类
+	
+}
+class Dog extends Animal{  //继承Animal类
+	
+}
+public class Example401 {
+	public static void main(String[] args) {
+		Cat c=new Cat();
+		Dog d=new Dog();
+		System.out.println("Cat类对象的属性和行为：");
+		c.color="黑色";
+		c.legnumber=4;
+		c.height=30;
+		c.weight=3;
+		c.display();
+		c.eat();
+		c.sleep();
+		System.out.println("Dog类对象的属性和行为：");
+		d.color="白色";
+		d.legnumber=4;
+		d.height=60;
+		d.weight=8;
+		d.display();
+		d.eat();
+		d.sleep();
+	}
+}

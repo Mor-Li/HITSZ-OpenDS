@@ -1,0 +1,27 @@
+class Teacher{
+	String name;
+	String major;
+	public Teacher(String name,String major) {
+		this.name=name;
+		this.major=major;
+	}
+	public void teach() {
+		System.out.println(name+"教"+major+"专业的课程");
+	}
+}
+class SofwareTeacher extends Teacher{
+	public SofwareTeacher(String name,String major) {
+		super(name,major);
+	}
+	public void teach() {
+		System.out.println(name+"所在的部门是软件学院,教"+major+"专业的课程");
+	}
+}
+public class Example411 {
+	public static void main(String[] args) {
+		Teacher t=new Teacher("王华","旅游管理");
+		SofwareTeacher st=new SofwareTeacher("张山","大数据");
+		t.teach();
+		st.teach();
+	}
+}

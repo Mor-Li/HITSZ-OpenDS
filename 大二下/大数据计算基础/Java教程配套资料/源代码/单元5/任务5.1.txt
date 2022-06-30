@@ -1,0 +1,35 @@
+public class Task501 {
+	String s;//要进行处理的加密或者解密字符串
+    int key;//秘钥，即移动的位数
+   Caesar(String es,int n){ //构造方法
+        s=es;
+        key=n;
+    }
+    public String process(){  //加密和解密方法
+        String es="";
+        for (int i=0;i<s.length();i++){
+            char c=s.charAt(i);//取字符串中每一位
+            if(c>='a'&&c<='z'){  //判断，是小写字母
+                c+=key%26;       //移动key%26位
+                if(c<'a') c+=26;     //向左越界
+                if(c>'z') c-=26;    //向右越界
+            }
+            else if (c>='A'&&c<='Z'){//判断，是大写字母
+                c+=key%26;
+                if(c<'A') c+=26;
+                if(c>'Z')  c-=26;
+            }
+            es+=c;
+        }
+        return es;
+    }
+    public static void main(String args[]){
+        String  s="java";
+        Caesar c=new Caesar(s,2);     //加密
+        String str =c.process();
+        System.out.println("加密字符串为: "+str);
+        Caesar c1=new Caesar(str,-2);   //解密
+        str =c1.process(); 
+        System.out.println("解密字符串为: "+str);
+    }
+}

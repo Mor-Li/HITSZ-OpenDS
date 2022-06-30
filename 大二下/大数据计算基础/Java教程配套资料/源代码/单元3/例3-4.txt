@@ -1,0 +1,12 @@
+import static java.lang.System.*;
+import static java.lang.Math.*;
+import java.util.Scanner;
+public class Example304{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(in);
+		out.println("请输入圆的半径：");
+		float r=sc.nextFloat();
+		float area=(float) (PI*pow(r,2));
+		out.print("半径为："+r+"的圆，面积为："+area);
+	}
+}

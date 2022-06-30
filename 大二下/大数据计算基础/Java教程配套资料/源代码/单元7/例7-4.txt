@@ -1,0 +1,10 @@
+public class Example704 extends Thread{
+	public void run() {
+		System.out.println("子线程的名字："+Thread.currentThread().getName());
+	}
+	public static void main(String[] args) {
+		System.out.println("当前线程的名字："+Thread.currentThread().getName());
+		Example704 t=new Example704 ();
+		t.run();
+	}
+}

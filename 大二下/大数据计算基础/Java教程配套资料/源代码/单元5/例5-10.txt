@@ -1,0 +1,11 @@
+import java.util.Date;
+public class Example510 {
+	public static void main(String[] args){
+		Date before=new Date(1543047220849L);//创建以前的日期
+		System.out.println("以前的日期为："+before);
+		Date now=new Date();//创建现在的日期
+		System.out.println("现在的日期为："+now);
+		boolean b=now.after(before);//用after()方法判断现在的日期是否在以前的日期之后
+		System.out.println("现在的日期在以前的日期之后吗？"+b);
+		}
+}

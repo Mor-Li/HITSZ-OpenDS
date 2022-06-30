@@ -1,0 +1,65 @@
+import static java.lang.Math.*;
+abstract class Geometric{
+	double a;
+	public Geometric(double a) {
+		this.a=a;
+	}
+	public abstract double getArea();
+	public abstract double getPerimeter();
+}
+class Triangle extends Geometric{
+	double b;
+	double c;
+	public Triangle(double a,double b,double c){
+		super(a);
+		this.b=b;
+		this.c=c;
+	}
+	public double getArea(){
+		double s=0.25 * sqrt((a+b+c)*(a+b-c)*(a-b+c)*(b+c-a));
+		return s;
+	}
+	public double getPerimeter(){
+		return a+b+c;
+	}
+}
+class Rectangle extends Geometric{
+	double b;
+	public Rectangle(double a,double b){
+		super(a);
+		this.b=b;
+	}
+	public double getArea(){
+		return a*b;
+	}
+	public double getPerimeter(){
+		return 2*(a+b);
+	}
+}
+class Circle extends Geometric{
+	public Circle(double r) {
+		super(r);
+	}
+	public double getArea() {
+		return PI*a*a;
+	}
+	public double getPerimeter() {
+		return 2*PI*a;
+	}
+}
+public class Task401 {
+	public static void main(String[] args) {
+		Triangle t=new Triangle(3,4,5);
+		Rectangle r=new Rectangle(10,20);
+		Circle c=new Circle(8);
+		System.out.print("三角形的三条边为:"+t.a+"、"+t.b+"、"+t.c);
+		System.out.print("  面积是:"+t.getArea());
+		System.out.println("  周长是:"+t.getPerimeter());
+		System.out.print("矩形的长和宽分别为:"+r.a+"、"+r.b);
+		System.out.print("  面积是:"+r.getArea());
+		System.out.println("  周长是:"+r.getPerimeter());
+		System.out.print("圆的半径为:"+t.a);
+		System.out.print("  面积是:"+c.getArea());
+		System.out.println("  周长是:"+c.getPerimeter());
+	}
+}

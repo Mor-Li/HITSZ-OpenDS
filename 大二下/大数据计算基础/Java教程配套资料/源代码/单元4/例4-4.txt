@@ -1,0 +1,32 @@
+class Circle{
+	public  final  float PI=3.1415926f;  //用final修饰PI为常量
+    public  float  r=0.0f;               //定义成员变量r
+    public void area(){    //求面积
+        System.out.println("半径为"+r+"的圆，面积为："+PI * r * r); 
+    }
+    public void circumference(){ //求周长
+    	System.out.println("半径为"+r+"的圆，周长为："+ 2 * PI * r );  
+    }
+}
+class Cylinder extends Circle{  //定义圆柱
+	public float h;  //圆柱体的高
+	 public void area(){    //求表面积
+		 System.out.println("半径为"+r+"的圆柱，表面积为："+2 * PI * r * h );  
+	    }
+	 public void volume() { //求体积
+		 System.out.println("半径为"+r+"的圆柱，体积为："+ PI * r * r * h );  
+	 }
+}
+public class Example404 {
+	public static void main(String[] args) {
+		Circle c=new Circle();
+		Cylinder cyl=new Cylinder();
+		c.r=3;  //圆的半径为3
+		cyl.r=5; //圆柱体的半径为5
+		cyl.h=10; //圆柱体的高为10
+		c.area();
+		c.circumference();
+		cyl.area();
+		cyl.volume();
+	}
+}

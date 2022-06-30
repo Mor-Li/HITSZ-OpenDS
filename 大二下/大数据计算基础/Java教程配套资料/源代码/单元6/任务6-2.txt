@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Task602 {
+	public static void main(String[] args) {
+		Scanner  sc=new  Scanner(System.in);//创建键盘录入对象
+        System.out.println("请输入第一个边长：");
+        double x=sc.nextDouble(); //将键盘录入的数据存储在变量x中
+        System.out.println("请输入第二个边长：");
+        double  y=sc.nextDouble();  //将键盘录入的数据存储在变量y中
+        System.out.println("请输入第三个边长：");
+        double  z=sc.nextDouble();  //将键盘录入的数据存储在变量z中
+       try {
+        double p=Perimeter(x,y,z);
+        System.out.println(p);
+       }catch(TriangleException e) {
+    	    System.out.println(e);
+       }
+	}
+    public static double Perimeter(double x,double y,double z)  throws TriangleException{
+    	    if(x + y <=z || x + z <= y ||y + z <= x||x<=0 || y<=0 ||z<=0)
+    	    	    throw new TriangleException(x,y,z);
+    	    double p = x + y + z ;
+    	    		return p;
+    }
+}
+class TriangleException extends Exception{
+	public TriangleException(double x,double y,double z) {
+		super("x="+x+" y="+y+" z="+z+"不能组成三角形");
+	}
+}

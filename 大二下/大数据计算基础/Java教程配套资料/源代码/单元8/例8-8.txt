@@ -1,0 +1,10 @@
+import java.io.*;
+   public class Example808 {
+	public static void main(String[] args) throws Exception {
+		FileOutputStream fos=new FileOutputStream("test8.txt");
+		BufferedOutputStream bos=new BufferedOutputStream(fos);
+		byte[] b="输出缓冲流测试".getBytes();
+	   bos.write(b);
+		bos.close();
+       }
+}	

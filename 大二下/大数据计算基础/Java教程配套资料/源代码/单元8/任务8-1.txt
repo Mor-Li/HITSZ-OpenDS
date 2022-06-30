@@ -1,0 +1,13 @@
+import java.io.*;
+public class Task801 {
+	public static void main(String[] args) throws IOException{
+	    FileInputStream fis = new FileInputStream("test.txt");
+	    FileOutputStream fos = new FileOutputStream("testcopy.txt");
+	    int len;
+	    while((len = fis.read()) != -1){
+	    	fos.write(len);
+	    }
+	    fis.close();
+	    fos.close();
+	}
+}

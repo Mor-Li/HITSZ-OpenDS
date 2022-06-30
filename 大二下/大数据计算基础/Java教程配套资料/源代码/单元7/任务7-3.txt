@@ -1,0 +1,32 @@
+public class Task703 {
+	public static void main(String[] args) {	 
+		Customer c1=new Customer("张三",100);
+		Customer c2=new Customer("李四",-300);
+		Customer c3=new Customer("王五",400);
+		c1.start();
+		c2.start();
+		c3.start();
+	}
+}
+class Account {
+	private static int cash=1000; //账户余额
+	public synchronized static void draw(int money) {
+			try {
+				Thread.sleep(1000);
+				cash=cash+money;
+				System.out.println(Thread.currentThread().getName()+"对帐户进行了"+money+"操作,当前账户余额为"+cash+"元");
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}	 
+	}	
+}
+class Customer extends Thread{
+	private int money;
+	public Customer(String name,int money) {
+		super(name);
+		this.money=money;
+	}
+	public void run() {
+		Account.draw(money);	
+	}
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Example710 extends Thread {
+    static int n,sum=0;
+	public void run() {
+		for(int i=1;i<=n;i++) {
+			sum=sum+i;
+		}
+	}
+	public static void main(String[] args) throws InterruptedException {
+		Scanner sc=new Scanner(System.in); //创建键盘类对象
+		System.out.println("请输入n");
+		n=sc.nextInt();  //将从键盘输入的整数赋值给变量n
+		Example710 t=new Example710();//创建线程类对象
+		t.start();//线程的启动
+		t.join();//线程的加入
+		System.out.println("1到"+n+"的和是"+sum);
+	}
+}

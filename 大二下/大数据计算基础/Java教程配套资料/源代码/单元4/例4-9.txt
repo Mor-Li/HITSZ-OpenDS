@@ -1,0 +1,40 @@
+class Calculate{
+	private int a;
+	private int b;
+	public int getA() {
+		return a;
+	}
+	public void setA(int a) {
+		this.a = a;
+	}
+	public int getB() {
+		return b;
+	}
+	public void setB(int b) {
+		this.b = b;
+	}
+	public Calculate() {
+	}
+	public Calculate(int a) {
+		this.a=a;		
+	}
+	public Calculate(int a,int b) {
+		this.b=b;
+	}
+	public int add() {
+		return a+b;
+	}
+}
+public class Example409 {
+	public static void main(String[] args) {
+		Calculate c1=new Calculate();
+		Calculate c2=new Calculate(3);
+		Calculate c3=new Calculate(5,10);
+		c1.setA(1);
+		c1.setB(2);
+		System.out.println("空参构造函数实例化的对象："+c1.add());
+		c2.setB(5);
+		System.out.println("一个参构造函数实例化的对象："+c2.add());
+		System.out.println("两个参构造函数实例化的对象："+c3.add());
+	}
+}

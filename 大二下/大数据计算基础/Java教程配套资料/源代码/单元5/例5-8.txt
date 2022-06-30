@@ -1,0 +1,13 @@
+public class Example508 {
+	public static void main(String[] args){
+        String [] str =new String[3];//创建并初始化一维数组
+                    str[0]="张三";
+                    str[1]="李四";
+                    str[2]="王五";
+
+             // for循环遍历数组
+      for(int i=0;i<str.length;i++){
+     System.out.println("一维数组:"+str[i]);
+                }
+	}
+}

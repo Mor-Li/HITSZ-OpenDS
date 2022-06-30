@@ -1,0 +1,13 @@
+public class Example705 implements Runnable{ //① 实现Runnable接口
+	public void run() {//② 重写接口的run()方法
+		for(int i=0;i<=10;i++)
+			System.out.println("子线程在运行");
+		}
+	public static void main(String[] args) {
+		Example705 myrun=new Example705(); //③ 为实现接口的类创建一个对象myrun
+		Thread t=new Thread(myrun); // ④ 创建Thread类的对象t，并以myrun作为构造方法的参数	
+		t.start(); // ⑤启动线程
+		for(int i=0;i<=10;i++)
+			System.out.println("main线程运行");
+		}
+	}

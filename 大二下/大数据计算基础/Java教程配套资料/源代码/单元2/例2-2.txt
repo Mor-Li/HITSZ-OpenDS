@@ -1,0 +1,12 @@
+public class Example201 {
+	public static void main(String[] args){
+		String name="小明";                 //姓名
+		int age=20;                         //年龄
+		String sex="男";                     //性别	
+		String favorite="篮球";                //爱好
+		System.out.println("姓名是："+name);
+		System.out.println("年龄是："+age);
+		System.out.println("性别是："+sex);
+		System.out.println("爱好是："+favorite);
+	}
+}

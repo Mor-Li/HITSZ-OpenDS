@@ -1,0 +1,22 @@
+//文件PackageTest1.java中的内容
+package com.cqcet.java;
+public class PackageTest1 {
+	public void displayMessage() {
+		System.out.println("我是包com.cqcet.java里面的类PackageTest1.java");
+	}
+}
+//文件PackageTest2.java中的内容
+package com.cqcet.java;
+public class PackageTest2 {
+	public void displayMessage() {
+		System.out.println("我是包com.cqcet.java里面的类PackageTest2.java");
+	}
+}
+//主类Example303.java中的内容
+import com.cqcet.java.PackageTest1;
+public class Example303{
+	public static void main(String[] args) {
+		PackageTest1 pt1=new PackageTest1();
+		pt1.displayMessage();
+	 }
+}

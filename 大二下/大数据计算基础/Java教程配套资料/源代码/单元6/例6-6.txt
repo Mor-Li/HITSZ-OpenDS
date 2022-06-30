@@ -1,0 +1,26 @@
+import   java.util.Scanner;
+public class Example606 {
+    public static  int div(int x,int y) throws Exception,ArithmeticException {
+    	   if(y > 100)
+               throw new Exception("除数不能大于100");
+       else if(y==0)
+    		   throw new ArithmeticException();
+    	         else
+        	      return  x/y ;
+    } 
+   public static void main(String[] args){
+       Scanner  sc=new  Scanner(System.in); //创建键盘录入对象
+       System.out.println("请输入第一个数"); 
+       int  x=sc.nextInt();  //将键盘录入的数据存储在变量x中
+       System.out.println("请输入第二个数");
+       int  y=sc.nextInt();  //将键盘录入的数据存储在变量y中
+       try{
+              int  z=div(x,y);
+              System.out.println(z);
+              }catch(ArithmeticException e){
+                    System.out.println("除数不能为0");
+               }catch(Exception e){
+                   System.out.println("除数不能大于100");
+              }
+     }
+ }

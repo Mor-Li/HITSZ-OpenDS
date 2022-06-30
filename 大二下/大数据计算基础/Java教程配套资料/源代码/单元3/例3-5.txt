@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class User{
+	 private String name;
+	 private String password;
+	 private boolean isValid() {
+		 if(name.toLowerCase().equals("admin")
+				 &&password.toLowerCase().equals("123456"))
+			 return true;
+		 else 
+			 return false;
+	 }
+	 public void login(String name，String password) {
+		 this.name=name;
+		 this.password=password;
+		 if(isValid())
+			 System.out.println("用户"+this.name+"成功登录系统");
+		 else
+			 System.out.println("用户和密码错误，请重新输入");	 
+	 }
+ }
+ public class Example305{
+	 public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		User u=new User();
+		System.out.println("请输入用户名:");
+		String name=sc.next();
+		System.out.println("请输入密码:");
+		String password=sc.next();
+		u.login(name，password);
+	 }
+ }

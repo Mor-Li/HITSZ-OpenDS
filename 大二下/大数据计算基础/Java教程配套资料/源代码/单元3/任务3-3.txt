@@ -1,0 +1,57 @@
+class BookNew{
+	private  String title;  	   //书名
+	private  int page;          //页数
+	private  int price;         //价格
+	private  String publisher;  //出版社
+	private  String author;     //作者
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public int getPage() {
+		return page;
+	}
+	public void setPage(int page) {
+		if(page>0)
+			this.page = page;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		if(price>0)
+			this.price = price;
+	}
+	public String getPublisher() {
+		return publisher;
+	}
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	public void displayBookInformation() {
+	 System.out.println("作者："+author);
+	 System.out.println("书名："+title);
+	 System.out.println("页数："+page);
+	 System.out.println("价格："+price);
+	 System.out.println("出版社："+publisher);
+	}
+}
+public class Task303 {
+	public static void main(String[] args) {
+		BookNew bn=new BookNew();          //声明并创建对象
+		bn.setAuthor("张晓");
+		bn.setPage(258);
+		bn.setPrice(39);
+		bn.setPublisher("北京邮电大学出版社");
+		bn.setTitle("Java程序设计");
+		bn.displayBookInformation();
+	}
+}

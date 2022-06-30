@@ -1,0 +1,20 @@
+class MusicThread extends Thread {
+	public void run() {
+		while(true)
+			System.out.println("我在听音乐");
+		}
+}
+class ChatThread extends Thread {
+	public void run() {
+		while(true)
+			System.out.println("我在聊天");
+		}
+}
+public class Task701 {
+	public static void main(String[] args) {
+		MusicThread mt=new MusicThread();
+		ChatThread ct=new ChatThread();
+		mt.start();
+		ct.start();
+	}
+}

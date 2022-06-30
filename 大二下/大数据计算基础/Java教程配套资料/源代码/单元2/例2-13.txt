@@ -1,0 +1,14 @@
+public class Example209 {
+	public static void main(String[] args){
+		int x=30;
+		if(x>40){//条件判断
+			System.out.println("x的值大于40");
+		}else if(x>20){//条件判断
+			System.out.println("x的值大于20，小于40");
+		}else if(x>0){//条件判断
+			System.out.println("x的值大于0，小于20");
+		}else{//条件判断
+			System.out.println("x的值小于0");
+		}
+	 }
+}

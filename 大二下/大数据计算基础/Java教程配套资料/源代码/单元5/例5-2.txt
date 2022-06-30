@@ -1,0 +1,8 @@
+public class Example502 {
+	public static void main(String[] args){
+		int readtime=3;//int型变量
+		float practice=3.5f;//float型变量
+		System.out.println("我每天花"+readtime+"小时看Java书，"
+	+practice+"小时上机实践。");//字符串将各种类型的数据相连接并输出
+		}
+}

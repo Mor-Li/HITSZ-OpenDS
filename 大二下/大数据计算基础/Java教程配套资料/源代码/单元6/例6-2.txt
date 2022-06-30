@@ -1,0 +1,12 @@
+public class Example602 {
+	 public static void main(String[] args){
+        double  x = 15.3;
+        double  y = 0;  
+    	try{   
+            double  z=x/y;
+            System.out.println(z);
+         }catch(ArithmeticException e){
+         	System.out.println("除数不能为0");
+           }
+    	}
+}

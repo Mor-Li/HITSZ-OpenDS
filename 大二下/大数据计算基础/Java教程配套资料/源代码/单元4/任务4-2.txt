@@ -1,0 +1,88 @@
+//在“Task402”下创建接口“Geometric.java”。
+public interface Geometric {
+	double PI=3.14;
+	double getArea();
+	double getPerimeter();
+}
+
+
+ //在“Task402”下创建类“Triangle” 实现接口Geometric。
+import static java.lang.Math.sqrt;
+class Triangle implements Geometric{
+	double a;
+	double b;
+	double c;
+	public Triangle(double a,double b,double c){
+		this.a=a;
+		this.b=b;
+		this.c=c;
+	}
+	public double getArea(){
+		double s=0.25 * sqrt((a+b+c)*(a+b-c)*(a-b+c)*(b+c-a));
+		return s;
+	}
+	public double getPerimeter(){
+		return a+b+c;
+	}
+}
+
+
+
+//在“Task402”下创建类“Rectangle” 实现接口Geometric。
+class Rectangle implements Geometric{
+	double a;
+	double b;
+	public Rectangle(double a,double b){
+		this.a=a;
+		this.b=b;
+	}
+	public double getArea(){
+		return a*b;
+	}
+	public double getPerimeter(){
+		return 2*(a+b);
+	}
+}
+
+
+
+//在“Task402”下创建类“Circle”实现接口Geometric。
+class Circle implements Geometric{
+	double r;
+	public Circle(double r) {
+		this.r=r;
+	}
+	public double getArea() {
+		return PI*r*r;
+	}
+	public double getPerimeter() {
+		return 2*PI*r;
+	}
+}
+
+
+
+//创建主类“Task402”。
+public class Task402 {
+	public static double areaTask(Geometric g) {
+		return g.getArea();
+	}
+	public static double perimeterTask(Geometric g) {
+		return g.getPerimeter();
+	}
+	public static void main(String[] args) {
+		Triangle t=new Triangle(3,4,5);
+		Rectangle r=new Rectangle(10,20);
+		Circle c=new Circle(8);
+		System.out.print("三角形的三条边为:"+t.a+"、"+t.b+"、"+t.c);
+		System.out.print("  面积是:"+areaTask(t));
+		System.out.println("  周长是:"+perimeterTask(t));
+		System.out.print("矩形的长和宽分别为:"+r.a+"、"+r.b);
+		System.out.print("  面积是:"+areaTask(r));
+		System.out.println("  周长是:"+perimeterTask(r));
+		System.out.print("圆的半径为:"+t.a);
+		System.out.print("  面积是:"+areaTask(c));
+		System.out.println("  周长是:"+perimeterTask(c));
+	}
+}
+

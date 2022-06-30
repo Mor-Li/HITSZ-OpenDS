@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Example608 {
+	public static void main(String[] args) {
+	   Scanner sc=new Scanner(System.in); //创建键盘类对象
+	   System.out.println("请输入获得总学分");
+	   int credits=sc.nextInt();  //将从键盘输入的整数赋值给变量credits
+	   try {
+		String str=IsCompletedCredits(credits);
+		System.out.println(str);
+	   }catch(CreditsEarnedException e) {
+			System.out.println("抛出异常"+e);
+	     }	
+	}
+public static String IsCompletedCredits(int credits) throws CreditsEarnedException{
+	if(credits<128)
+		throw new CreditsEarnedException(credits); //抛出异常对象
+	else return "学分达到毕业条件";
+	}
+}
+class CreditsEarnedException extends Exception{
+	CreditsEarnedException(int credits){
+		super("学分"+credits+"低于128分,不能毕业");
+	}
+}

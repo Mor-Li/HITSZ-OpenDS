@@ -1,0 +1,11 @@
+public class Example202 {
+	public static void main(String[] args){
+		int a=3;       //定义了变量a，并赋初值为3
+		{
+			int b=9;   //定义了变量b，并赋初值为9
+			System.out.println("a="+a);  //访问变量a
+			System.out.println("b="+b);  //访问变量b
+		}
+		System.out.println("b="+b); //访问变量b
+	}
+}

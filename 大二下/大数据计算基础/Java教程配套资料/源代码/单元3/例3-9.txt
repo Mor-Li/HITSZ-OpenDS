@@ -1,0 +1,36 @@
+class CircleNew{
+	private  final  float PI=3.1415926f;  //用final修饰PI为常量
+    private  float  r=0.0f;               //定义成员变量r
+    private  static int  count;          //定义静态成员变量count
+    public float getR() {
+		return r;
+	}
+	public void setR(float r) {
+		this.r = r;
+	}
+	public static int getCount() {
+		return count;
+	}
+	public CircleNew(){
+		count++;
+	}
+    public float getArea(){    //定义实例成员方法，求面积
+        return  PI * r * r;
+    }
+    public float getCircumference(){ //定义实例成员方法，求周长
+        return  2 * PI * r ;
+    }
+}
+public class Example309 {  //定义主类测试Circle的用法
+	public static void main(String[] args) {
+		CircleNew c1=new CircleNew(); //用系统提供的无参构造函数来实例化对象c1
+		CircleNew c2=new CircleNew(); //用系统提供的无参构造函数来实例化对象c2
+		c1.setR(3.0f);         //通过setter方法对对象c1的成员变量r赋值
+		c2.setR(6.0f);         //通过setter方法为对象c2的成员变量r赋值
+		System.out.println("CirleNew类对象的个数为："+CircleNew.getCount());
+		System.out.println("第一个对象的面积和周长：");
+		System.out.println("面积："+c1.getArea()+" 周长："+c1.getCircumference());
+		System.out.println("第二个对象的面积和周长：");
+		System.out.println("面积："+c2.getArea()+" 周长："+c2.getCircumference());
+	}
+}

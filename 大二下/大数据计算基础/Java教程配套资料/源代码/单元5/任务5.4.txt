@@ -1,0 +1,17 @@
+public class Task504 {
+	    public static void main(String[] args) {
+	        int cnt = 0;
+	        double min = -10.8;
+	        double max = 5.9;
+
+	        for(int i=(int)Math.ceil(min);i<max;i++){
+	            int abs = Math.abs(i);
+	            if(abs>6 || abs<2.1){
+	                System.out.println(i);
+	                cnt++;
+	            }
+	        }
+
+	        System.out.println("个数="+cnt);
+	    }
+}

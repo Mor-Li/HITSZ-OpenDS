@@ -1,0 +1,13 @@
+public class Example707 extends Thread{
+	public void run() throws InterruptedException{
+		for(int i=1;i<=10;i++)
+		{
+				Thread.sleep(1000);//当前线程处于等待状态，等待1秒
+				System.out.println("线程运行"+i+"休眠1秒");	 
+		}
+	 }
+	public static void main(String[] args) {
+		Example707 t1=new Example707();
+		 t1.start();
+	}
+}

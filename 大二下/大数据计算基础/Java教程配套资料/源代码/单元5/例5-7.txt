@@ -1,0 +1,34 @@
+public class Example507 {
+	public static void main(String[] args){
+		System.out.println("1.添加-------------------");
+		add();
+		System.out.println("2.删除-------------------");
+		remove();
+		System.out.println("3.修改-------------------");
+		alter();
+	}
+	public static void add(){
+		StringBuffer sb=new StringBuffer();//定义一个字符串缓冲区
+		sb.append("hellochongqing");//在末尾添加字符串
+		System.out.println("append的添加结果："+sb);
+		sb.insert(2, "666");
+		System.out.println("insert的添加结果"+sb);
+	}
+	public static void remove(){
+		StringBuffer sb=new StringBuffer("hellochongqing");
+		sb.delete(0, 5);//指定范围删除
+		System.out.println("删除指定位置的结果："+sb);
+		sb.deleteCharAt(2);//删除指定位置
+		System.out.println("删除指定位置结果"+sb);
+		sb.delete(0, sb.length());//清空缓冲区
+		System.out.println("清空缓冲区结果："+sb);
+	}
+	public static void alter(){
+		StringBuffer sb=new StringBuffer("hellochongqing");
+		sb.setCharAt(0, 'H');//修改指定位置的字符
+		System.out.println("修改指定位置的结果："+sb);
+		sb.replace(1, 3, "EL");//替换指定位置字符串或字符
+		System.out.println("替换指定位置字符串或字符的结果："+sb);
+		System.out.println("字符串反转结果："+sb.reverse());
+	}
+}

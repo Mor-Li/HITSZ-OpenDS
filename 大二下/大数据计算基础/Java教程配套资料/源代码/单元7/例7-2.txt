@@ -1,0 +1,9 @@
+public class Example702 {
+	public static void main(String[] args) {
+		Thread t = Thread.currentThread();
+	    	System.out.println("线程原名字是："+t.getName()+"...线程原优先级是："+t.getPriority());
+	    	t.setName("mainnew");
+	    	t.setPriority(8);
+	    	System.out.println("线程新名字是："+t.getName()+"...线程新优先级是："+t.getPriority()); 
+	}
+}

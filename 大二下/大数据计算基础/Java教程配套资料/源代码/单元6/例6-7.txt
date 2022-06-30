@@ -1,0 +1,17 @@
+public class Example607 {
+	public static  void cal(int a,int b) throws ArithmeticException{
+		if(b==0)
+			{
+				throw  new ArithmeticException();
+				System.out.println("a/b="+a/b);
+			}
+	}
+	public static void main(String[] args) {
+	try{
+		int a=16,b=0;
+	   	 cal(a,b);
+		}catch(ArithmeticException e) {
+			System.out.println(e.toString());
+		}
+	}
+}

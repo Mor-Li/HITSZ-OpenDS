@@ -1,0 +1,10 @@
+public class Example512 {
+	public static void main(String[] args){
+		System.out.println(Math.max(5.3, 3.2));//返回两个值中较大的一个
+		System.out.println(Math.min(1.1, 2.0));//返回两个值中较小的一个
+		System.out.println(Math.cbrt(5.0));//求立方根
+		System.out.println(Math.sqrt(64));//开方
+		System.out.println(Math.round(4.5));//四舍五入
+		}
+
+}

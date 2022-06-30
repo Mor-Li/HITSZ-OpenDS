@@ -1,0 +1,24 @@
+class Book{
+	public  String title;  	   //书名
+	public  int page;          //页数
+	public  int price;         //价格
+	public  String publisher;  //出版社
+	public  String author;     //作者
+	public Book(String title,int page,int price,String publisher,String author) {
+		this.title=title;
+		this.page=page;
+		this.price=price;
+		this.publisher =publisher;
+		this.author =author;
+	}
+	public void displayBookInformation() {
+	 System.out.println("由"+author+"编著的名为"+title+"的书，有"+page+"页，价格为"+price+"，由"+publisher+"出版");
+	}
+}
+public class Task301 {
+	public static void main(String[] args) {
+		Book b1=new Book("网页程序设计教程",462,60,"机械工业出版社","王松杰");          		b1.displayBookInformation();    //调用成员方法输出对象b1的信息
+		Book b2=new Book("Java程序设计",258,39,"北京邮电大学出版社","张晓");           
+		b2.displayBookInformation();    //调用成员方法输出对象b2的信息
+	}
+}

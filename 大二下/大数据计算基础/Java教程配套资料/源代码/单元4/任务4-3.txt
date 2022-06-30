@@ -1,0 +1,37 @@
+class Fruit{
+	String color;
+	String place;
+	public Fruit(String color,String place) {
+		this.color=color;
+		this.place=place;
+	}
+	public void harvest() {
+		System.out.println("原产地"+place+",颜色变成"+color+",收获了");
+	}
+}
+class Apple extends Fruit{
+	
+	public Apple(String color,String place) {
+		super(color,place);
+	}
+	public void harvest() {
+		System.out.println("原产地"+place+",颜色变成"+color+"的苹果收获了");
+	}
+}
+class Pear extends Fruit{
+	public Pear(String color,String place) {
+		super(color,place);
+	}
+	public void harvest() {
+		System.out.println("原产地"+place+",颜色变成"+color+"的梨收获了");
+	}
+}
+public class Task403 {
+	public static void harvestTask(Fruit f) {
+		f.harvest();
+	}
+	public static void main(String[] args) {
+		harvestTask(new Apple("红色","山东"));
+		harvestTask(new Pear("黄色","新疆"));
+	}
+}

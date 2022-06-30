@@ -1,0 +1,20 @@
+public class Example711 extends Thread{
+	public static int num=100;
+	int i=0;
+	public void run() {
+	      num=num-i;
+	      System.out.println(currentThread().getName()+"窗口卖了"+i+"张票，还剩下"+num+"张票");    
+	    }
+	public Example711(String s,int i) {
+		super(s);
+		this.i=i;
+	}
+	public static void main(String[] args) throws Exception{
+		Example711 t1=new Example711("窗口1",10);
+		Example711 t2=new Example711("窗口2",2);
+		Example711 t3=new Example711("窗口3",6);
+		t1.start();
+		t2.start();
+		t3.start();
+	}
+}

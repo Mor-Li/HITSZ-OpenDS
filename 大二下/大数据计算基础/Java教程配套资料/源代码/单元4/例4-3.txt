@@ -1,0 +1,55 @@
+class Animal{
+	String color;    //动物的颜色
+	int legnumber;   //动物腿的个数
+	double height;   //动物的身长
+	double weight;   //动物的种量
+	public Animal(String color,int legnumber,double height,double weight) {
+		this.color=color;
+		this.legnumber =legnumber;
+		this.height=height;
+		this.weight=weight;		
+	}
+	public void eat() {
+		System.out.println("Animal eat...具有吃饭的功能");
+	}
+	public void sleep() {
+		System.out.println("Animal sleep...具有睡觉的功能");
+	}
+}
+class Cat extends Animal{  //继承Animal类
+	String color;  //子类的成员变量color
+	String name;   //子类新添加成员变量
+	public Cat(String color,int legnumber,double height,double weight,String name) {
+		super(color,legnumber,height,weight); //调用父类的构造方法
+		this.color="白色";
+		this.name=name;
+	}
+	public void displayAnimal() {
+	   System.out.println("Animal共有"+legnumber+"条腿,是"+super.color+"的");
+	   System.out.println("身长"+height+"厘米,重"+weight+"公斤");
+		super.eat();    //调用父类的eat()方法，super不能省略
+		super.sleep();	//调用父类的sleep()方法，super可以省略
+	}
+	public void displayCat() {
+System.out.println("Cat名字叫"+name+",共有"+legnumber+"条腿,是"+color+"的");
+		System.out.println("身长"+height+"厘米,重"+weight+"公斤");
+		eat(); //子类的成员方法eat()方法屏蔽了父类的成员方法eat()
+		sleep(); //调用继承了父类的成员方法sleep()
+		greet(); //调用子类新添加的成员方法greet()
+	}
+	public void eat() {  //子类屏蔽父类的成员方法
+		System.out.println("Cat eat...猫吃老鼠");
+	}
+	public void greet() {  //子类新添加的成员方法
+		System.out.println("Cat greet...喵喵喵...");
+	}
+}
+public class Example403 {
+	public static void main(String[] args) {
+		Cat c=new Cat("灰色",4,30,3,"小淘气");
+		System.out.println("输出父类Animal的信息......");
+		c.displayAnimal();
+		System.out.println("输出子类Cat的信息......");
+		c.displayCat();
+	}
+}

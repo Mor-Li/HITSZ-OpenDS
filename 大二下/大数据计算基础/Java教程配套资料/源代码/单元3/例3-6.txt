@@ -1,0 +1,17 @@
+class test{
+	test instance;
+	public test() {
+		instance=this;
+	}
+	public void print() {
+		System.out.println("this关键字为："+this);
+	}
+}
+ public class Example306{
+	 public static void main(String[] args) {
+		 test  t=new test();
+		 t.print();  
+		 System.out.println("类test的对象为："+t);
+		 System.out.println("类test代表自身的成员变量为："+t.instance); 
+	 }
+ }

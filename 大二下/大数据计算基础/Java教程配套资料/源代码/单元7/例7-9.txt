@@ -1,0 +1,14 @@
+public class Example709 extends Thread{
+	public void run() {	  
+		try {
+			Thread.sleep(1000);
+		}catch(InterruptedException e) {
+			System.out.println("线程被中断了");
+		}
+	}
+	public static void main(String[] args){
+		Example709 t=new Example709();
+		t.start();
+		t.interrupt();
+	}
+}

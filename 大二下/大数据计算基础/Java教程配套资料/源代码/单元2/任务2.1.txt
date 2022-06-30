@@ -1,0 +1,8 @@
+public class Task201 {
+	public static void main(String[] args){
+		int f=200;//定义一个变量保存华氏温度，并给它赋初值200
+		int c;//定义一个变量保存转换后的摄氏温度值
+		c=(int)((5.0/9)*(f-32));//强制类型转换
+		System.out.println("摄氏温度="+c);
+	}
+}

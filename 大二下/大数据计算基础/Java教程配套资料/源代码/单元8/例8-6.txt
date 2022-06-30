@@ -1,0 +1,12 @@
+import java.io.*;
+public class Example806 {
+    public static void main(String[] args) throws Exception {
+	FileOutputStream fos=new FileOutputStream("test6.txt",true);
+	byte[] b;
+    b="本例题主要向文件test6.txt写入数据，写入方式为追加写入".getBytes(); 
+     	fos.write(b);
+	 b="再次写入信息，查看能否实现追加写入".getBytes();
+fos.write(b);
+     fos.close();
+     }
+}

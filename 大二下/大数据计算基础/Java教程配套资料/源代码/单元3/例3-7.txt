@@ -1,0 +1,27 @@
+class calculate{
+	private int a;
+	private int b;
+	public int getA() {
+		return a;
+	}
+	public void setA(int a) {
+		this.a = a;
+	}
+	public int getB() {
+		return b;
+	}
+	public void setB(int b) {
+		this.b = b;
+	}
+	public int add(int a,int b) {  //this可以省略
+	  this.setA(a);    
+	  this.setB(b);
+	  return(this.getA() + this.getB());
+	}
+}
+ public class Example307{
+	 public static void main(String[] args) {
+		calculate t=new calculate();
+		System.out.println("运行结果为："+t.add(2, 5));
+	 }
+ }

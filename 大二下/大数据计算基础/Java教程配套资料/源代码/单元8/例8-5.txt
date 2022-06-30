@@ -1,0 +1,11 @@
+import java.io.*;
+public class Example805 {
+	public static void main(String[] args) throws Exception {
+		FileOutputStream fos=new FileOutputStream("test5.txt");
+		char c;
+		for(c='a' ; c<='z';c++){
+			fos.write(c);;
+		} 
+		fos.close();
+       }
+}

@@ -1,0 +1,23 @@
+//定义接口Shape，接口名与文件名相同
+public interface Shape {
+	final float PI=3.14f;
+	public float getArea(float r);
+	public float getCircumference(float r);
+}
+//定义Circle类实现接口Shape
+public class Circle implements Shape {
+	public float getArea(float r) {
+		return PI*r*r;
+	}
+	public float getCircumference(float r) {
+		return 2*PI*r;
+	}
+}
+//定义主类
+public class Example406 {
+	public static void main(String[] args) {
+		Circle c=new Circle();
+		System.out.println("半径为3的圆面积为："+c.getArea(3));
+		System.out.println("半径为3的圆周长为："+c.getCircumference(3));
+	}
+}

@@ -1,0 +1,10 @@
+import java.io.*;
+public class Example801 {
+	public static void main(String[] args) throws IOException{
+		FileInputStream fis= new FileInputStream("test.txt");
+		int len= 0;
+		while((len=fis.read())!=-1)
+			System.out.print(len+"  ");
+		 fis.close();
+	  }8
+}

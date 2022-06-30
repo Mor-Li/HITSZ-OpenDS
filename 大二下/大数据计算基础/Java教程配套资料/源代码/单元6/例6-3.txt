@@ -1,0 +1,16 @@
+public class Example603 {
+	public static void main(String[] args) {
+		int[] a=new int[3];
+		try {
+			a[0]=3;
+			a[1]=9;
+			a[2]=15;
+			a[3]=12;
+			for(int i=0;i<=3;i++)
+			System.out.println(a[i]+"  ");
+	     }finally {
+	    	 	System.out.println("try后面只有finally");
+	     }
+          System.out.println("异常处理后此代码块也不会运行");
+	}
+}

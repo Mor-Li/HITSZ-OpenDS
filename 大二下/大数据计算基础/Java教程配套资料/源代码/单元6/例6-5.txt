@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Example605 {
+	public static void main(String[] args){
+		Scanner  sc=new  Scanner(System.in);//创建键盘录入对象
+        	System.out.println("请输入第一个整数：");
+        	int  x=sc.nextInt(); //将键盘录入的数据存储在变量x中
+       	 System.out.println("请输入第二个整数：");
+        	int  y=sc.nextInt();  //将键盘录入的数据存储在变量y中
+    	 	try{   //由于div方法会抛出异常，所以要在调用方法div的地方捕获异常
+          		  int  z=div(x,y);
+          	 	 System.out.println(z);
+        	 }catch(ArithmeticException e){
+         		System.out.println("除数不能为0");
+          	 }finally {
+        	  	 System.out.println("finally语句块执行释放资源的操作！");	
+        	   	sc.close();
+           }
+     }
+	public static int div(int x,int y) throws ArithmeticException{ //声明要抛出的异常
+		 return  x/y;
+	}
+}

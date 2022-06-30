@@ -1,0 +1,10 @@
+import java.io.*;
+public class Example807 {
+	public static void main(String[] args) throws IOException{
+	         FileOutputStream fos= new FileOutputStream("test7.txt");
+	    byte[] b=new byte[1024];
+	    b="你好，欢迎使用文件输出流".getBytes();
+	    fos.write(b,0,18);
+	    fos.close();
+	 }
+}	

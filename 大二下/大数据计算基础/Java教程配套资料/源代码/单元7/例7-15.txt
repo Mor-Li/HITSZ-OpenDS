@@ -1,0 +1,35 @@
+public class Example715 {
+	public static Object lock=new Object();
+	public static void main(String[] args) {
+		FirstThread ft=new FirstThread();
+		SecondThread  st=new SecondThread();
+		ft.start();
+		st.start();
+	}
+}
+class FirstThread extends Thread{
+	public void run() {
+	synchronized(Example715.lock) {
+		for(int i=1;i<=5;i++) {
+		      System.out.println("在线程"+Thread.currentThread().getName()+"中打印"+i);
+			if(i==3)
+				try {
+					Example715.lock.wait();	
+				}catch(InterruptedException e) {
+					System.out.println("发生异常");
+				}
+		 }	
+	  }	
+     }
+}
+class SecondThread extends Thread{
+	public void run() {
+	synchronized(Example715.lock) {
+		for(int i=1;i<=5;i++) {
+		      System.out.println("在线程"+Thread.currentThread().getName()+"中打印"+i);
+			if(i==4)
+				 Example715.lock.notify();
+		}		
+	  }
+      }
+}

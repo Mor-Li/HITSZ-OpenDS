@@ -1,0 +1,16 @@
+public class Example208 {
+	public static void main(String[] args){
+		int math=55;          //数学成绩
+		int chinese=87;			//语文成绩
+		if(math>60){            //条件判断
+			System.out.println("数学及格了！");
+		}else{
+			System.out.println("数学不及格！");
+		}
+		if(chinese>60){ //条件判断
+			System.out.println("语文及格了！");
+		}else{
+			System.out.println("语文不及格！");
+		}
+	}
+}

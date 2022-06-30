@@ -1,0 +1,13 @@
+import java.io.*;
+public class Task802 {
+	public static void main(String[] args) throws IOException{
+	    FileReader fr = new FileReader("test.txt");
+	    FileWriter fw = new FileWriter("testcharcopy.txt");
+	    int len;
+	    while((len = fr.read()) != -1){
+	    	fw.write((char)len);
+	    }
+	    fr.close();
+	    fw.close();
+	}
+}

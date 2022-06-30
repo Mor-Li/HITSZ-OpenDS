@@ -1,0 +1,44 @@
+abstract class Animal{
+	String name; //动物的名字
+	int age;       //动物年龄
+	public Animal(String name,int age) {
+		this.name=name;
+		this.age=age;
+	}
+	public abstract void eat();  //定义抽象方法
+	public abstract void greet();
+}
+
+class Cat extends Animal{  //继承Animal类
+	public Cat(String name,int age) {
+		super(name,age);
+	}
+	public void eat() { //实现抽象方法
+		System.out.println("小猫"+this.name+this.age+"岁了,正在吃小鱼");
+	}
+	public void greet() {
+		System.out.println("小猫"+this.name+"欢迎你，喵喵喵...");
+	}
+}
+class Dog extends Animal{  //继承Animal类
+	public Dog(String name,int age) {
+		super(name,age);
+	}
+	public void eat() {
+		System.out.println("小狗"+this.name+this.age+"岁了,正在啃骨头");
+	}
+	public void greet() {
+		System.out.println("小狗"+this.name+"欢迎你，汪汪汪...");
+	}
+}
+
+public class Example405 {
+	public static void main(String[] args) {
+		Cat c=new Cat("小呆呆",3);
+		Dog d=new Dog("吉娃娃",5);
+		c.eat();
+		c.greet();
+		d.eat();
+		d.greet();
+	}
+}

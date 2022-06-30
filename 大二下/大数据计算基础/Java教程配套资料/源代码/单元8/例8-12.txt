@@ -1,0 +1,12 @@
+import java.io.*;
+public class Example812 {
+	public static void main(String[] args) throws Exception {
+		FileReader fr=new FileReader("test12.txt");
+		BufferedReader br=new BufferedReader(fr);
+		String str;
+		while((str=br.readLine())!=null) {
+			System.out.println(new String(str));
+		} 
+		br.close();
+       }
+}

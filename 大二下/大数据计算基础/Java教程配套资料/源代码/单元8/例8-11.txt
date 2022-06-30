@@ -1,0 +1,15 @@
+import java.io.*;
+public class Example811 {
+	public static void main(String[] args) throws IOException{
+		FileReader fr= new FileReader("test11.txt");
+		int len= 0;
+	      char[] c=new char[1024];
+		len=fr.read(c,0,10);
+		System.out.println("读取到的文件内容是：");
+		for(int i=0;i<len;i++)
+			System.out.print(c[i]);
+		System.out.println();
+		System.out.println("文件包含的字符个数是："+len);
+		fr.close();
+	 }
+	}

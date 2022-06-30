@@ -1,0 +1,12 @@
+public classExample212 {
+	public static void main(String[] args){
+		int x=1;			//定义int型变量，并赋初值
+		int sum=0;			//定义变量用于保存各数相加后的结果 
+		while(x<=100){		//while循环语句，当变量满足条件表达式时执行循环体语句
+			sum=sum+x;
+			x++;			//当使用了x变量后自加1
+			
+		}
+		System.out.println("1到100的和为："+sum);
+	}
+}

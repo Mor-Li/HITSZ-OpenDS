@@ -1,0 +1,30 @@
+public class Example714 {
+    public static Object lock1=new Object();
+	public static Object lock2=new Object();
+	public static void main(String[] args) {
+		FirstT ft=new FirstT();
+		SecondT  st=new SecondT();
+		ft.start();
+		st.start();
+	}
+}
+class FirstT extends Thread{
+   public void run() {
+	   synchronized(Example714 .lock1) {
+		   System.out.println("线程"+Thread.currentThread().getName()+"使用共享资源lock1");
+	   synchronized(Example714 .lock2) {
+	        System.out.println("线程"+Thread.currentThread().getName()+"使用共享资源lock2");
+	     }	 
+	   }	
+   }
+}
+class SecondT extends Thread{
+   public void run() {
+	   synchronized(Example714 .lock2) {
+	    System.out.println("线程"+Thread.currentThread().getName()+"使用共享资源lock2");
+	    synchronized(Example714 .lock1) {
+	         System.out.println("线程"+Thread.currentThread().getName()+"使用共享资源lock1");
+	    }	  
+	   }	
+   }  
+}

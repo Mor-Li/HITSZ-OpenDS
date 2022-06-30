@@ -1,0 +1,12 @@
+import java.io.*;
+public class Example813 {
+	public static void main(String[] args) throws Exception {
+		FileWriter fw=new FileWriter("test13.txt");
+		char[] c= {'你','好','文','件','输','出','流'};
+		int i;
+		for(i=0 ; i<c.length;i++){
+			fw.write(c[i]);;
+		} 
+		fw.close();
+       }
+}

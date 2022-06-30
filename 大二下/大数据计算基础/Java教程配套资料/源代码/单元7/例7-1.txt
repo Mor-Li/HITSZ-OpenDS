@@ -1,0 +1,10 @@
+public class Example701 {
+	public static void main(String[] args) {
+		Thread t=Thread.currentThread();//获取当前正在运行的线程的对象
+		System.out.println("当前线程的名字："+t.getName());
+		System.out.println("当前活动线程个数："+Thread.activeCount());
+		System.out.println("当前线程的优先级："+t.getPriority());
+		System.out.println("当前线程是否处于活动状态："+t.isAlive());
+		System.out.println("当前线程的名字的状态："+t.getState());	
+	}
+}

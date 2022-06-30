@@ -1,0 +1,12 @@
+public class Example207 {
+	public static void main(String[] args){
+			int x=32;//声明int型变量x，并赋初值
+			int y=50;//声明int型变量y，并赋初值
+			if(x>y){ //如果x>y
+				System.out.println("变量x大于变量y");//如果条件成立，输出的信息
+			}
+			if(x<y){//如果x<y
+				System.out.println("变量x小于变量y");//如果条件成立，输出的信息
+			}
+	}
+}

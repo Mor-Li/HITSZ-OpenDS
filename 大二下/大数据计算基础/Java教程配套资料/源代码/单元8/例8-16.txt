@@ -1,0 +1,10 @@
+import java.io.*;
+public class Example816 {
+	public static void main(String[] args) throws Exception {
+		FileWriter fw=new FileWriter("test16.txt");
+		BufferedWriter bw=new BufferedWriter(fw);
+		char[] c="字符缓冲输出流测试".toCharArray();
+	      bw.write(c);
+		bw.close();
+       }
+}

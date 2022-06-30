@@ -1,0 +1,11 @@
+public class Example501 {
+	public static void main(String[] args){
+		String str1=new String();//创建一个空的字符串
+		String str2=new String("hello java!");//创建一个内容为hello java的字符串
+		char[] charArray=new char[]{'J','a','v','a'};//创建一个内容为字符数组的字符串
+		String str3=new String(charArray);
+		System.out.println("Ja"+str1+"va");//打印到控制台
+		System.out.println(str2);
+		System.out.println(str3);
+	}
+}

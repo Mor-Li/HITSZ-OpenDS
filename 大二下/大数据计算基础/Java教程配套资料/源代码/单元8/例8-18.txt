@@ -1,0 +1,34 @@
+import java.io.*;
+public class Example818 {
+public static void main(String[] args) throws IOException {
+	File f=new File("test18.txt");
+	createFile(f);
+	testFile(f);
+	deleteFile(f);
+}
+public static void createFile(File f) throws IOException{
+     //创建文件
+	System.out.println("创建文件："+f.createNewFile());
+}
+public static void testFile(File f) {
+	//测试文件
+	System.out.println("文件是否存在："+f.exists());
+	System.out.println("是否是文件文件类型："+f.isFile());
+	System.out.println("是否是文件夹类型："+f.isDirectory());
+	System.out.println("是否是绝对路径："+f.isAbsolute());
+	System.out.println("文件是否是可执行文件："+f.canExecute());
+	System.out.println("文件可以读取："+f.canRead());
+	System.out.println("文件可以写入："+f.canWrite());
+}
+public static void deleteFile(File f) {
+	//删除文件
+	if(!f.exists()) {
+		System.out.println("文件不存在，不能删除");
+		return;
+	}
+	if(f.delete())
+	  System.out.println("删除成功");
+	else 
+		 System.out.println("删除失败");
+	}
+}

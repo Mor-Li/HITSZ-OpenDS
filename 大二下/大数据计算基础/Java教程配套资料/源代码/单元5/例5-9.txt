@@ -1,0 +1,16 @@
+public class Example509 {
+	public static void main(String[] args){
+	      int[][] arry = new int[2][3];//创建二维数组
+	      arry[0][0]=1;
+	      arry[0][1]=2;
+	      arry[0][2]=3;
+	      arry[1][0]=4;
+	      arry[1][1]=5;
+	      arry[1][2]=6;
+	        for(int i=0;i<arry.length;i++){
+	            for(int j=0;j<arry[i].length;j++){
+	                System.out.println(arry[i][j]);
+	            }
+	        }
+		}
+}

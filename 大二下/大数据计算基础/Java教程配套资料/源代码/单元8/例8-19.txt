@@ -1,0 +1,26 @@
+import java.io.File;
+import java.io.IOException;
+public class Example819 {
+public static void main(String[] args) throws IOException {
+	//用File封装一个目录的对象
+	File directory=new File("D:\\Users\\admin\\eclipse-workspace\\Chapter08\\src\\testdir");
+	//判断目录是否存在，不存在则创建目录
+	if(!directory.exists()) {
+		System.out.println(directory.mkdir());
+	}
+   //在创建的新目录中创建5个文件
+	for(int i=1;i<=5;i++)
+	{
+      File f=new File(directory,"newfile"+i+".txt");
+      if(!f.exists())
+    	  	f.createNewFile();
+	 }
+	//把指定目录的文件以File的形式返回
+	File[] file=directory.listFiles();
+	for(int i=0;i<file.length;i++)
+	 {//输出指定目录的文件的名字和绝对路径
+		System.out.println("文件名是"+file[i].getName()+"的绝对路径是："+file[i].getAbsolutePath());
+	 }
+}
+	
+}

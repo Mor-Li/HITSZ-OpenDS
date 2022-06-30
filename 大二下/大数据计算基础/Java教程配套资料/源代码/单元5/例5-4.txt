@@ -1,0 +1,9 @@
+public class Example504 {
+	public static void main(String[] args){
+		String s="Jovo!";
+		String new1=s.replace("o","a");  //将Jovo中全部o替换为a
+		String new2=s.replaceFirst("o", "a");//将Jovo中第一个o替换为a
+		System.out.println(new1);
+		System.out.println(new2);
+	}
+}

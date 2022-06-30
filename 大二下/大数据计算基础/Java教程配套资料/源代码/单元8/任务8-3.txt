@@ -1,0 +1,24 @@
+import java.io.*;
+public class Task803 {
+	  public static void main(String[] args) {
+	     File directory=new File("music");
+	     deleteDir(directory);
+	  }
+	  public static void deleteDir(File dir) {
+	     if (!dir.exists()) {
+	     //如果文件夹不存在，直接返回，函数结束
+	     return;
+	       }
+	       if (dir.isFile()) {
+	       //如果dir是文件，调用delete()方法删除文件
+	       dir.delete();
+	       } else if (dir.isDirectory()) {//dir是文件夹
+	       File[] files = dir.listFiles();//获取文件夹的所有文件和子文件夹
+	       for (File myfile : files) 
+	       {//对数组files的每一个文件或文件夹，递归调用deleteDir(File dir)方法
+	          deleteDir(new File(myfile.getAbsolutePath()));
+	       }
+	       dir.delete();//把dir的所有子文件夹和文件删除完后，删除空目录
+	       }
+	   }
+	}

@@ -1,0 +1,8 @@
+public class Example206 {          
+	public static void main(String[] args){   
+		int a=34,b=12,c=61;
+		int min;
+		min=a<b?(a<c?a:c):(b<c?b:c);
+		System.out.println("min="+min);
+	}
+}
