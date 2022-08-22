@@ -5,7 +5,7 @@
 
 为方便起见，本仓库暂时只存放大数据专业特有课程资料，若需与计算机专业重叠课程资料，请移步[哈工大深圳计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)
 
-感谢对本项目贡献的同学：[Dseidhit](https://github.com/Dseidhit)、……以及电脑前的您！
+感谢对本项目贡献的同学：[Dseidhit](https://github.com/Dseidhit)、emanon、[shirok1](https://github.com/shirok1)……以及电脑前的您！
 
 本项目目前完全由历届学长、学姐的无私奉献与整理而得到，蕴藏在每份文件的背后都是无差别的人类劳动。你们的感谢与关注将成为项目贡献者继续更新的最大动力！
 
