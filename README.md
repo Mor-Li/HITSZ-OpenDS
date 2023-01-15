@@ -3,6 +3,8 @@
 [浙江大学相关项目](https://github.com/QSCTech/zju-icicles) 
 [清华大学相关项目](https://github.com/PKUanonym/REKCARC-TSC-UHT) 启发，创立了本项目。
 
+关于资料补充方式说明：（1）【推荐】采取GitHub本身的Pull Request方式提交（2）如不熟悉(1)方式，也可添加qq:2568818204进行资料提交。 所有贡献者将会按照贡献时间次序展示在贡献者名单中，先到先得。
+
 为方便起见，本仓库暂时只存放大数据专业特有课程资料，若需与计算机专业重叠课程资料，请移步[哈工大深圳计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)
 
 感谢对本项目贡献的同学：[Dseidhit](https://github.com/Dseidhit)、emanon、[Shiroki Satsuki](https://github.com/shirok1)、[cocacoye](https://github.com/cocacoye)……以及电脑前的您！
