@@ -10,6 +10,7 @@
 感谢对本项目贡献的同学：[Dseidhit](https://github.com/Dseidhit)、emanon、[Shiroki Satsuki](https://github.com/shirok1)、[cocacoye](https://github.com/cocacoye)……以及电脑前的您！
 
 本项目目前完全由历届学长、学姐的无私奉献与整理而得到，蕴藏在每份文件的背后都是无差别的人类劳动。你们的感谢与关注将成为项目贡献者继续更新的最大动力！
+<p><a href="https://star-history.com/#Dseidhit/HITSZ-OpenDS"><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Dseidhit/HITSZ-OpenDS"></a></p>
 
 ## 前言 | Preface
 
