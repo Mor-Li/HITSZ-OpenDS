@@ -2,6 +2,24 @@
 
 受 [哈尔滨工业大学（深圳）计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)，[浙江大学相关项目](https://github.com/QSCTech/zju-icicles) 和 [清华大学相关项目](https://github.com/PKUanonym/REKCARC-TSC-UHT) 启发，创立了本项目。
 
+
+## 通知 | Notifications
+
+**建议您点击本仓库右上角的 "Watch" 按钮！** 😃
+
+这样一来，您就可以在本仓库内容有任何更新时，通过电子邮件接收到通知。这样，您就能第一时间获取到最新的大数据专业课程攻略信息。
+
+下面是如何点击 "Watch" 按钮的步骤：
+
+1. 登录您的 GitHub 账户。
+2. 打开 [HITSZ-OpenDS](https://github.com/your-username/your-repo) 仓库。
+3. 在页面的右上角，您会看到 "Watch" 按钮。点击它。
+
+   ![](https://ucarecdn.com/74dc13e8-bfba-42fa-8b0c-581d3a110acf/githubwatch.png)
+
+4. 在下拉菜单中，选择 "All Activity"。
+5. 完成！现在您已经订阅了本仓库的所有更新。
+
 ## 贡献 | Contribution
 
 **欢迎贡献！欢迎贡献！欢迎贡献！** 😃
