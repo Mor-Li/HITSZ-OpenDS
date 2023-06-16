@@ -18,7 +18,7 @@
 
 ------
 
-如果你认为这对你有帮助，欢迎给我的仓库一个star。
+如果你认为这对你有帮助，欢迎给我的仓库一个star: https://github.com/Shinning-Zhou/HITSZ-OpenDS
 
 如果你对此有困惑或质疑，欢迎联系我进行讨论或纠错：shinning_zhou@163.com
 
