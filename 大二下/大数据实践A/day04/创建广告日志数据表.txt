@@ -1,0 +1,23 @@
+CREATE TABLE case_data (
+  rank int,
+  dt int,
+  cookie varchar(200),
+  ip varchar(200),
+  idfa varchar(200),
+  imei varchar(200),
+  android varchar(200),
+  openudid varchar(200),
+  mac varchar(200),
+  timestamps int,
+  camp int,
+  creativeid int,
+  mobile_os int,
+  mobile_type varchar(200),
+  app_key_md5 varchar(200),
+  app_name_md5 varchar(200),
+  placementid varchar(200),
+  useragent varchar(200),
+  mediaid varchar(200),
+  os_type varchar(200),
+  born_time int
+);

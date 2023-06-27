@@ -1,0 +1,29 @@
+crontab -e 
+* * * * * python /opt/data.py /opt/flinkproject/$(date +"\%Y-\%m-\%d-\%H-\%M-\%S").log 1000
+
+
+
+#启动zookeeper命令（三台机子都要执行）
+bin/zkServer.sh start
+
+#kafka启动
+bin/kafka-server-start.sh config/server.properties >/data/kafaklog &
+
+
+#创建top主题
+bin/kafka-topics.sh --zookeeper master:2181,slave1:2181,slave2:2181 --create --topic shop --partitions 3 --replication-factor 3
+#列出kafka所有主题
+bin/kafka-topics.sh --zookeeper master:2181,slave1:2181,slave2:2181 --list
+#删除kafka主题
+bin/kafka-topics.sh --zookeeper master:2181,slave1:2181,slave2:2181 --delete --topic shop
+#创建消费者
+bin/kafka-console-consumer.sh --bootstrap-server master:9092,slave1:9092,slave2:9092 --from-beginning --topic shop
+
+#flume启动命令
+bin/flume-ng agent -c conf/ -f conf/spool-memory-kafka.conf -n client -Dflume.root.logger=INFO,console
+
+#启动flink
+bin/start-cluster.sh
+
+#提交flink程序
+bin/flink run -c com.tipdm.flink01.windowWordCount flink-1.0-SNAPSHOT.jar

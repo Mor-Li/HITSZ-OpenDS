@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="logistic" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a7dcbde2-2735-40ce-aa19-76a294deb9a6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="2BKmK2gBMFdOSjABNDW1IWKCDDL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager" selected="Application.LoadModel">
+    <configuration name="AlsModeTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.tipdm.training.AlsModeTest" />
+      <module name="logistic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tipdm.training.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountsTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.tipdm.process.CountsTest" />
+      <module name="logistic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tipdm.process.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterCountTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.tipdm.process.FilterCountTest" />
+      <module name="logistic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tipdm.process.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoadModel" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.tipdm.modelload.LoadModel" />
+      <module name="logistic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tipdm.modelload.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Logistic_User" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.tipdm.trainmodel.Logistic_User" />
+      <module name="logistic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tipdm.trainmodel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoadModel" />
+        <item itemvalue="Application.Logistic_User" />
+        <item itemvalue="Application.FilterCountTest" />
+        <item itemvalue="Application.CountsTest" />
+        <item itemvalue="Application.AlsModeTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7dcbde2-2735-40ce-aa19-76a294deb9a6" name="Default Changelist" comment="" />
+      <created>1656663083655</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656663083655</updated>
+      <workItem from="1656663088015" duration="4999000" />
+      <workItem from="1656900440663" duration="10611000" />
+      <workItem from="1656917678461" duration="7615000" />
+      <workItem from="1656925982654" duration="1527000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="502" y="270" width="910" height="383" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1656925182911">
+      <screen x="0" y="25" width="1920" height="873" />
+    </state>
+    <state x="502" y="270" width="910" height="383" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1920.873@0.25.1920.873" timestamp="1656925182911" />
+    <state x="583" y="143" width="744" height="609" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1656663221181">
+      <screen x="0" y="25" width="1916" height="844" />
+    </state>
+    <state x="583" y="143" width="744" height="609" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.25.1916.844@0.25.1916.844" timestamp="1656663221181" />
+    <state x="712" y="167" width="480" height="553" key="DetectedRootsChooserDialog" timestamp="1656663403153">
+      <screen x="0" y="25" width="1916" height="844" />
+    </state>
+    <state x="712" y="167" width="480" height="553" key="DetectedRootsChooserDialog/0.25.1916.844@0.25.1916.844" timestamp="1656663403153" />
+    <state x="664" y="195" width="572" height="506" key="FileChooserDialogImpl" timestamp="1656901746636">
+      <screen x="0" y="25" width="1920" height="873" />
+    </state>
+    <state x="663" y="189" width="686" height="506" key="FileChooserDialogImpl/0.25.1916.844@0.25.1916.844" timestamp="1656663687051" />
+    <state x="664" y="195" width="572" height="506" key="FileChooserDialogImpl/0.25.1920.873@0.25.1920.873" timestamp="1656901746636" />
+    <state width="1880" height="90" key="GridCell.Tab.0.bottom" timestamp="1656928187321">
+      <screen x="0" y="25" width="1920" height="873" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.0.bottom/0.25.1916.844@0.25.1916.844" timestamp="1656668230608" />
+    <state width="1880" height="90" key="GridCell.Tab.0.bottom/0.25.1920.873@0.25.1920.873" timestamp="1656928187321" />
+    <state width="1880" height="90" key="GridCell.Tab.0.center" timestamp="1656928187321">
+      <screen x="0" y="25" width="1920" height="873" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.0.center/0.25.1916.844@0.25.1916.844" timestamp="1656668230607" />
+    <state width="1880" height="90" key="GridCell.Tab.0.center/0.25.1920.873@0.25.1920.873" timestamp="1656928187321" />
+    <state width="1880" height="90" key="GridCell.Tab.0.left" timestamp="1656928187321">
+      <screen x="0" y="25" width="1920" height="873" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.0.left/0.25.1916.844@0.25.1916.844" timestamp="1656668230607" />
+    <state width="1880" height="90" key="GridCell.Tab.0.left/0.25.1920.873@0.25.1920.873" timestamp="1656928187321" />
+    <state width="1880" height="90" key="GridCell.Tab.0.right" timestamp="1656928187321">
+      <screen x="0" y="25" width="1920" height="873" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.0.right/0.25.1916.844@0.25.1916.844" timestamp="1656668230608" />
+    <state width="1880" height="90" key="GridCell.Tab.0.right/0.25.1920.873@0.25.1920.873" timestamp="1656928187321" />
+    <state width="1876" height="265" key="GridCell.Tab.1.bottom" timestamp="1656668230608">
+      <screen x="0" y="25" width="1916" height="844" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.1.bottom/0.25.1916.844@0.25.1916.844" timestamp="1656668230608" />
+    <state width="1876" height="265" key="GridCell.Tab.1.center" timestamp="1656668230608">
+      <screen x="0" y="25" width="1916" height="844" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.1.center/0.25.1916.844@0.25.1916.844" timestamp="1656668230608" />
+    <state width="1876" height="265" key="GridCell.Tab.1.left" timestamp="1656668230608">
+      <screen x="0" y="25" width="1916" height="844" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.1.left/0.25.1916.844@0.25.1916.844" timestamp="1656668230608" />
+    <state width="1876" height="265" key="GridCell.Tab.1.right" timestamp="1656668230608">
+      <screen x="0" y="25" width="1916" height="844" />
+    </state>
+    <state width="1876" height="265" key="GridCell.Tab.1.right/0.25.1916.844@0.25.1916.844" timestamp="1656668230608" />
+    <state x="442" y="25" width="1028" height="842" key="SettingsEditor" timestamp="1656912146574">
+      <screen x="0" y="25" width="1920" height="873" />
+    </state>
+    <state x="441" y="25" width="1028" height="841" key="SettingsEditor/0.25.1916.844@0.25.1916.844" timestamp="1656663708596" />
+    <state x="442" y="25" width="1028" height="842" key="SettingsEditor/0.25.1920.873@0.25.1920.873" timestamp="1656912146574" />
+    <state x="643" y="283" key="com.intellij.ide.util.TipDialog" timestamp="1656925984474">
+      <screen x="0" y="25" width="1920" height="873" />
+    </state>
+    <state x="642" y="274" key="com.intellij.ide.util.TipDialog/0.25.1916.844@0.25.1916.844" timestamp="1656663088204" />
+    <state x="643" y="283" key="com.intellij.ide.util.TipDialog/0.25.1920.873@0.25.1920.873" timestamp="1656925984474" />
+    <state x="238" y="75" width="1434" height="748" key="new project wizard" timestamp="1656911237456">
+      <screen x="0" y="25" width="1920" height="873" />
+    </state>
+    <state x="238" y="73" width="1434" height="748" key="new project wizard/0.25.1916.844@0.25.1916.844" timestamp="1656668152644" />
+    <state x="238" y="75" width="1434" height="748" key="new project wizard/0.25.1920.873@0.25.1920.873" timestamp="1656911237456" />
+  </component>
+</project>
