@@ -65,7 +65,7 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！来自大家
 
 本项目目前完全由历届学长、学姐的无私奉献与整理而得到，蕴藏在每份文件的背后都是无差别的人类劳动。你们的感谢与关注将成为项目贡献者继续更新的最大动力！
 
-<p><a href="https://star-history.com/#Dseidhit/HITSZ-OpenDS"><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Dseidhit/HITSZ-OpenDS"></a></p>
+<p><a href="https://star-history.com/#DseidLi/HITSZ-OpenDS"><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=DseidLi/HITSZ-OpenDS"></a></p>
 
 ## 前言 | Preface
 
