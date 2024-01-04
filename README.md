@@ -43,13 +43,11 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！来自大家
 
 1. 首先 Fork 本项目，点击右上角的 `Fork` 按键即可。
 
-2.  * 上传文件到已有文件夹：打开对应文件夹，点击 `Add file` 按钮下的 `Upload file`，上传你的文件。
-	* 上传文件到新文件夹：打开任意文件夹，点击 `Add file` 按钮下的 `Upload file`，把**浏览器地址栏中文件夹名称改为你想要新建的文件夹名称，然后按下 `回车`**，再上传你的文件。
-	* 修改已有文件（如 readme.md）：打开对应文件，点击右侧铅笔标志 `Edit this file`，修改后上传你的文件。
+2.  * 上传文件到你自己的Fork仓库，进行文件更新或修改。
 
 3. * 提交 PR：上传完文件到个人仓库之后，点击 `Pull Request` 即可。请留意一下项目的文件组织。
 
-	* 也可以直接附加在 [Issue](https://github.com/dseidhit/HITSZ-OpenDS/issues/new) 中，由维护者进行添加。
+	* 也可以直接附加在 [Issue](https://github.com/DseidLi/HITSZ-OpenDS/issues/new) 中，由维护者进行添加。
 
 比如我是 2050 年上数据结构的 anonym，想在「数据结构」中传一个自己的笔记，即在「数据结构」文件夹下新建文件夹 `note/2050_anonym`，然后往里面填东西即可。
 
