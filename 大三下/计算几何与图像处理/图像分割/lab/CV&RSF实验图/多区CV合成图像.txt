@@ -1,0 +1,24 @@
+Img=zeros(101,101);
+for i=1:101
+    for j=1:101
+        Img(i,j) =30;
+    end
+end
+
+Img(50,50) = 200;
+for i=1:101
+    for j=1:101
+        if sqrt((i-50)^2+(j-50)^2)<(20+3*cos(3*atan((j-50)/(i-50))))
+            Img(i,j) = 200;
+        end
+    end
+end
+Img(50,50) = 150;
+for i=1:101
+    for j=1:101
+        if sqrt((i-50)^2+(j-50)^2)<=(30+3*cos(3*atan((j-50)/(i-50))))&&sqrt((i-50)^2+(j-50)^2)>=(20+3*cos(3*atan((j-50)/(i-50))))
+            Img(i,j) = 150;
+        end
+    end
+end
+Img(50,50) = 200;

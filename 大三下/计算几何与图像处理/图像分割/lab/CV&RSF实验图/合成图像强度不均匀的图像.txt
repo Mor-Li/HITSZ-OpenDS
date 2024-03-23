@@ -1,0 +1,14 @@
+Img=zeros(101,101);
+for i=1101
+    for j=1101
+        Img(i,j) = 30(1+sin(0.01pi(i-j)));
+    end
+end
+Img(51,51) = 100;
+for i=1101
+    for j=1101
+        if sqrt((i-51)^2+(j-51)^2)(35+7cos(8atan((j-51)(i-51))))
+            Img(i,j) = 100(1+0.2sin(0.01pi(i-j)));
+        end
+    end
+end
