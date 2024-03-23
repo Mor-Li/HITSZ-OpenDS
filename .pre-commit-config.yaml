@@ -1,0 +1,26 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-file-size
+        name: Check File Size
+        entry: python .hooks/check_file_size.py
+        language: system
+        files: '.*'
+        stages: [commit]
+
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.9
+    hooks:
+      - id: mdformat
+        args: ["--number", "--table-width", "200"]
+        additional_dependencies:
+          - mdformat-openmmlab
+          - mdformat_frontmatter
+          - linkify-it-py
+        exclude: configs/
+
+  - repo: https://github.com/myint/docformatter
+    rev: v1.3.1
+    hooks:
+      - id: docformatter
+        args: ["--in-place", "--wrap-descriptions", "79"]

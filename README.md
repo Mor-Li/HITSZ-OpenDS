@@ -2,7 +2,6 @@
 
 受 [哈尔滨工业大学（深圳）计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)，[浙江大学相关项目](https://github.com/QSCTech/zju-icicles) 和 [清华大学相关项目](https://github.com/PKUanonym/REKCARC-TSC-UHT) 启发，创立了本项目。
 
-
 ## 通知 | Notifications
 
 **关于大文件上传的方法**
@@ -19,12 +18,15 @@ Github限制了文件上传大小，如果您需要上传大小超过100MB的大
 下面是如何点击 "Watch" 按钮的步骤：
 
 1. 登录您的 GitHub 账户。
+
 2. 打开 [HITSZ-OpenDS](https://github.com/your-username/your-repo) 仓库。
+
 3. 在页面的右上角，您会看到 "Watch" 按钮。点击它。
 
    ![](https://ucarecdn.com/74dc13e8-bfba-42fa-8b0c-581d3a110acf/githubwatch.png)
 
 4. 在下拉菜单中，选择 "All Activity"。
+
 5. 完成！现在您已经订阅了本仓库的所有更新。
 
 ## 贡献 | Contribution
@@ -43,11 +45,11 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！来自大家
 
 1. 首先 Fork 本项目，点击右上角的 `Fork` 按键即可。
 
-2.  * 上传文件到你自己的Fork仓库，进行文件更新或修改。
+2. - 上传文件到你自己的Fork仓库，进行文件更新或修改。
 
-3. * 提交 PR：上传完文件到个人仓库之后，点击 `Pull Request` 即可。请留意一下项目的文件组织。
+3. - 提交 PR：上传完文件到个人仓库之后，点击 `Pull Request` 即可。请留意一下项目的文件组织。
 
-	* 也可以直接附加在 [Issue](https://github.com/DseidLi/HITSZ-OpenDS/issues/new) 中，由维护者进行添加。
+   - 也可以直接附加在 [Issue](https://github.com/DseidLi/HITSZ-OpenDS/issues/new) 中，由维护者进行添加。
 
 比如我是 2050 年上数据结构的 anonym，想在「数据结构」中传一个自己的笔记，即在「数据结构」文件夹下新建文件夹 `note/2050_anonym`，然后往里面填东西即可。
 
@@ -79,7 +81,7 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！来自大家
 
 我希望只要是前人走过的弯路，后人就不必再走。这是我的信念，也是我建立这个项目的原因。
 
->摘录自 [浙江大学相关项目](https://github.com/QSCTech/zju-icicles)
+> 摘录自 [浙江大学相关项目](https://github.com/QSCTech/zju-icicles)
 
 ## 愿景 | Vision
 
@@ -87,7 +89,8 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！来自大家
 2. 一定程度上消除信息不对称所带来的不公平现象。
 3. 以成为同学们学习中的辅助与参考为出发点，**坚决反对抄袭**。
 4. 仓库存活期间永久保证：**公益、免费、开源**。
->摘录自 [哈尔滨工业大学（深圳）计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)
+
+> 摘录自 [哈尔滨工业大学（深圳）计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)
 
 ## 许可 | License
 
@@ -97,4 +100,4 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！来自大家
 
 其他部分的版权归属于其各自的作者。资料仅供参考，请自己判断其适用性。
 
->摘录自 [哈尔滨工业大学（深圳）计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)
+> 摘录自 [哈尔滨工业大学（深圳）计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)
