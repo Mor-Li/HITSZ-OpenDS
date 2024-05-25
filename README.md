@@ -84,8 +84,8 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！来自大家
 <details>
   <summary><kbd>Star History</kbd></summary>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=DseidLi%2FHITSZ-OpenDS&theme=dark&type=Date">
-    <img width="100%" src="https://api.star-history.com/svg?repos=open-compass%2Fopencompass&type=Date">
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=DseidLi%2FHITSZ-OpenDS&theme=auto&type=Date">
+    <img width="100%" src="https://api.star-history.com/svg?repos=DseidLi%2FHITSZ-OpenDS&type=Date">
   </picture>
 </details>
 
