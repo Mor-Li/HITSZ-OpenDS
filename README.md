@@ -1,15 +1,17 @@
 # 哈尔滨工业大学（深圳）大数据专业课程攻略 | HITSZ-OpenDS
 
+> **“如果我比别人看得更远，那是因为我站在巨人的肩膀上。”**  
+> **"If I have seen further it is by standing on the shoulders of Giants."**  
+> —— 艾萨克·牛顿（Isaac Newton）
+
+
 受 [哈尔滨工业大学（深圳）计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)，[浙江大学相关项目](https://github.com/QSCTech/zju-icicles) 和 [清华大学相关项目](https://github.com/PKUanonym/REKCARC-TSC-UHT) 启发，创立了本项目。
 
 ## 通知 | Notifications
 
 **关于大文件上传的方法**
 
-Github限制了文件上传大小，如果您需要上传大小超过100MB的大文件，请按以下要求进行操作：
-
-1. 将大文件以邮件超大附件的形式发送到 dseid@qq.com 邮箱。
-2. 或者，将文件获取方式发送到 dseid@qq.com 邮箱中，我们会将文件上传到相应的大文件存储服务器，供大家获取使用。感谢您的合作和理解！
+Github限制了文件上传大小，如果您需要上传大小超过100MB的大文件，建议在相应目录下放一个Google云盘或其他网盘的在线下载链接即可。
 
 **建议您点击本仓库右上角的 "Watch" 按钮！** 😃
 
@@ -59,13 +61,33 @@ Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！来自大家
 
 **注意：** 本仓库通常只存放大数据专业特有课程资料，若需与计算机专业重叠课程资料，请移步[哈工大深圳计算机专业相关项目](https://github.com/hewei2001/HITSZ-OpenCS)。
 
-## 特别感谢
+## 贡献者
 
-感谢对本项目贡献的同学：[Dseidhit](https://github.com/Dseidhit)、emanon、[Shiroki Satsuki](https://github.com/shirok1)、[cocacoye](https://github.com/cocacoye)……以及电脑前的您！
+感谢对本项目贡献的同学：
+
+<!-- Made with [OSS Insight](https://ossinsight.io/) -->
+
+<a href="https://github.com/DseidLi/HITSZ-OpenDS/graphs/contributors" target="_blank">
+  <table>
+    <tr>
+      <th colspan="2">
+        <br><img src="https://contrib.rocks/image?repo=DseidLi/HITSZ-OpenDS"><br><br>
+      </th>
+    </tr>
+  </table>
+</a>
+
+……以及电脑前的您！
 
 本项目目前完全由历届学长、学姐的无私奉献与整理而得到，蕴藏在每份文件的背后都是无差别的人类劳动。你们的感谢与关注将成为项目贡献者继续更新的最大动力！
 
-<p><a href="https://star-history.com/#DseidLi/HITSZ-OpenDS"><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=DseidLi/HITSZ-OpenDS"></a></p>
+<details>
+  <summary><kbd>Star History</kbd></summary>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=DseidLi%2FHITSZ-OpenDS&theme=auto&type=Date">
+    <img width="100%" src="https://api.star-history.com/svg?repos=DseidLi%2FHITSZ-OpenDS&type=Date">
+  </picture>
+</details>
 
 ## 前言 | Preface
 
